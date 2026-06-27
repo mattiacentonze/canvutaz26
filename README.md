@@ -1,8 +1,8 @@
-# USA26 Roadtrip Planner v3.1
+# USA26 Roadtrip Planner v3.2
 
 Versione semplificata per Google Sheet, senza colonne tecniche e con consigli della guida della collega filtrati sul vostro itinerario 4–12 luglio.
 
-## Cosa cambia nella v3.1
+## Cosa cambia nella v3.2
 
 - Il sito GitHub Pages resta pubblico ma **in sola lettura**.
 - Il piano si modifica solo da **Google Sheet privato**, condiviso solo con voi tre come Editor.
@@ -55,7 +55,7 @@ Poi controlla: `Settings → Pages → Branch main / root`.
 
 ## Cache
 
-La v3.1 usa nuovi cache-buster in `index.html` e una nuova chiave `localStorage` (`usa26_v31_cache`). Dopo il push, fare `Ctrl+F5` sul sito.
+La v3.2 usa nuovi cache-buster in `index.html` e una nuova chiave `localStorage` (`usa26_v31_cache`). Dopo il push, fare `Ctrl+F5` sul sito.
 
 ## Sicurezza
 
@@ -68,3 +68,14 @@ Non mettere nel Google Sheet:
 - dati sanitari o personali sensibili.
 
 Il sito è pubblico: tutto quello che il sito mostra è visibile a chi ha il link.
+
+
+## Novità v3.2
+
+- Aggiunte immagini di sfondo nelle card `giorni` e `cose_da_fare`.
+- Nuove colonne:
+  - `giorni`: `Immagini sfondo`, `Fonte immagini`
+  - `cose_da_fare`: `Immagine sfondo`, `Fonte immagine`
+- Le immagini sono URL remoti: il repository resta leggero.
+- Se volete sostituire una foto, basta incollare un altro URL immagine nella cella.
+- Per più immagini nella stessa card giorno, separare gli URL con ` | `.

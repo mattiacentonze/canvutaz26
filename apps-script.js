@@ -1,15 +1,15 @@
 /**
- * USA26 Roadtrip Planner v3 - Google Apps Script SOLO LETTURA.
+ * USA26 Roadtrip Planner v3.2 - Google Apps Script SOLO LETTURA.
  *
  * Tab richiesti nel Google Sheet:
  * giorni, cose_da_fare, alloggi, costi, auto_documenti, prenotazioni, link_utili, note
  *
- * Le colonne sono volutamente semplici. Non servono ID, timestamp, core o orari.
+ * Le colonne restano semplici. Le immagini sono solo URL di sfondo usati dal sito.
  */
 
 const SHEET_HEADERS = {
-  giorni: ['Data','Titolo giornata','Partenza','Arrivo','Guida stimata','Priorità del giorno','Da vedere','Google Maps','Note'],
-  cose_da_fare: ['Data','Luogo','Cosa fare','Categoria','Priorità','Costo stimato USD','Link utile','Note'],
+  giorni: ['Data','Titolo giornata','Partenza','Arrivo','Guida stimata','Priorità del giorno','Da vedere','Google Maps','Immagini sfondo','Fonte immagini','Note'],
+  cose_da_fare: ['Data','Luogo','Cosa fare','Categoria','Priorità','Costo stimato USD','Link utile','Immagine sfondo','Fonte immagine','Note'],
   alloggi: ['Data notte','Zona','Nome alloggio','Indirizzo','Link prenotazione','Costo stimato USD','Note'],
   costi: ['Categoria','Voce','Costo stimato USD','Pagamento','Link utile','Note'],
   auto_documenti: ['Categoria','Voce','Stato','Link utile','Note'],

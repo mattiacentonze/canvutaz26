@@ -1,12 +1,10 @@
 {
   "meta": {
     "Titolo": "USA26 Roadtrip Planner",
-    "Versione": "v3.1 - Sheet semplificato + consigli guida collega filtrati",
     "Periodo": "4–12 luglio 2026",
     "Persone": "3",
     "Sintesi": "San Francisco → Santa Barbara → Los Angeles → Las Vegas → Grand Canyon → Page / Antelope → Zion → Salt Lake City",
-    "Route Google Maps": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA/Los+Angeles,+CA/Las+Vegas,+NV/Grand+Canyon+Village,+AZ/Page,+AZ/Zion+National+Park,+UT/Salt+Lake+City,+UT",
-    "Google Sheet": ""
+    "Route Google Maps": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA/Los+Angeles,+CA/Las+Vegas,+NV/Grand+Canyon+Village,+AZ/Page,+AZ/Zion+National+Park,+UT/Salt+Lake+City,+UT"
   },
   "giorni": [
     {
@@ -18,7 +16,9 @@
       "Priorità del giorno": "Golden Gate + Marina/Palace of Fine Arts + Fisherman’s Wharf/Pier 39",
       "Da vedere": "Golden Gate Bridge/viewpoint, Palace of Fine Arts, Marina District, Ghirardelli Square, Fisherman’s Wharf, Pier 39, Lombard Street se resta tempo",
       "Google Maps": "https://www.google.com/maps/search/Golden+Gate+Bridge+Palace+of+Fine+Arts+Ghirardelli+Square+Pier+39+Lombard+Street+San+Francisco",
-      "Note": "Tenere la giornata flessibile. Evitare Tenderloin, soprattutto la zona dietro Union Square. Cable car opzionale se la coda è gestibile."
+      "Note": "Tenere la giornata flessibile. Evitare Tenderloin, soprattutto la zona dietro Union Square. Cable car opzionale se la coda è gestibile.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Golden+Gate+Bridge+San+Francisco&sig=1 | https://source.unsplash.com/1600x900/?Palace+of+Fine+Arts+San+Francisco&sig=2 | https://source.unsplash.com/1600x900/?Pier+39+San+Francisco&sig=3 | https://source.unsplash.com/1600x900/?Lombard+Street+San+Francisco&sig=4",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-05",
@@ -29,7 +29,9 @@
       "Priorità del giorno": "Alcatraz se prenotata + Ferry Building/Embarcadero + Mission/Painted Ladies",
       "Da vedere": "Alcatraz, Ferry Building, Embarcadero, Chinatown, Coit Tower, Mission murals, Painted Ladies, Haight-Ashbury, Golden Gate Park/Twin Peaks come extra",
       "Google Maps": "https://www.google.com/maps/search/Alcatraz+Ferry+Building+Coit+Tower+Mission+District+Painted+Ladies+Haight+Ashbury+San+Francisco",
-      "Note": "Alcatraz merita secondo la guida della collega. Non caricare tutto: scegliete 2 zone e lasciate il resto opzionale."
+      "Note": "Alcatraz merita secondo la guida della collega. Non caricare tutto: scegliete 2 zone e lasciate il resto opzionale.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Alcatraz+Island+San+Francisco&sig=1 | https://source.unsplash.com/1600x900/?Ferry+Building+San+Francisco&sig=2 | https://source.unsplash.com/1600x900/?Painted+Ladies+San+Francisco&sig=3 | https://source.unsplash.com/1600x900/?Golden+Gate+Park+San+Francisco&sig=4",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-06",
@@ -40,7 +42,9 @@
       "Priorità del giorno": "Trasferimento verso sud con 1-2 soste massimo",
       "Da vedere": "US-101, Monterey/Carmel solo se partenza presto, San Luis Obispo, Pismo Beach, Santa Barbara waterfront",
       "Google Maps": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA",
-      "Note": "Guidare con la luce: paesaggio bello e giornate lunghe. Big Sur/costa completa rischia di allungare troppo. Stanford esclusa: non imperdibile e toglierebbe tempo a SF."
+      "Note": "Guidare con la luce: paesaggio bello e giornate lunghe. Big Sur/costa completa rischia di allungare troppo. Stanford esclusa: non imperdibile e toglierebbe tempo a SF.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Golden+Gate+Bridge+San+Francisco&sig=1 | https://source.unsplash.com/1600x900/?Palace+of+Fine+Arts+San+Francisco&sig=2 | https://source.unsplash.com/1600x900/?Pier+39+San+Francisco&sig=3 | https://source.unsplash.com/1600x900/?Lombard+Street+San+Francisco&sig=4",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-07",
@@ -51,7 +55,9 @@
       "Priorità del giorno": "Santa Barbara breve + LA classica senza correre troppo",
       "Da vedere": "Santa Barbara Courthouse/Stearns Wharf, Beverly Hills/Rodeo Drive, Hollywood Walk of Fame quick stop, Griffith Observatory, Santa Monica/Venice se logistica ok",
       "Google Maps": "https://www.google.com/maps/dir/Santa+Barbara,+CA/Beverly+Hills,+CA/Hollywood,+Los+Angeles,+CA/Griffith+Observatory,+Los+Angeles,+CA/Santa+Monica,+CA",
-      "Note": "LA è compressa. Evitare Downtown se siete stanchi; evitare Skid Row. Usare BestParking per parcheggi. Venice/Santa Monica meglio prima del buio."
+      "Note": "LA è compressa. Evitare Downtown se siete stanchi; evitare Skid Row. Usare BestParking per parcheggi. Venice/Santa Monica meglio prima del buio.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Santa+Barbara+Courthouse+California&sig=1 | https://source.unsplash.com/1600x900/?Griffith+Observatory+Los+Angeles&sig=2 | https://source.unsplash.com/1600x900/?Santa+Monica+Pier+Venice+Beach&sig=3 | https://source.unsplash.com/1600x900/?Beverly+Hills+Rodeo+Drive&sig=4",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-08",
@@ -62,7 +68,9 @@
       "Priorità del giorno": "Arrivare a Las Vegas e fare serata Strip/Fremont",
       "Da vedere": "Las Vegas Sign, Bellagio fountains/Conservatory, Venetian, Wynn, Sphere da fuori, Fremont Street/Viva Vision",
       "Google Maps": "https://www.google.com/maps/dir/Los+Angeles,+CA/Las+Vegas,+NV",
-      "Note": "Percorso diretto verso Las Vegas: non inserire deviazioni lunghe. Scegliere massimo 3-4 cose in serata."
+      "Note": "Percorso diretto verso Las Vegas: non inserire deviazioni lunghe. Scegliere massimo 3-4 cose in serata.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Santa+Barbara+Courthouse+California&sig=1 | https://source.unsplash.com/1600x900/?Griffith+Observatory+Los+Angeles&sig=2 | https://source.unsplash.com/1600x900/?Santa+Monica+Pier+Venice+Beach&sig=3 | https://source.unsplash.com/1600x900/?Beverly+Hills+Rodeo+Drive&sig=4",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-09",
@@ -73,7 +81,9 @@
       "Priorità del giorno": "South Rim + viewpoint sparsi, non un solo punto",
       "Da vedere": "Hoover Dam opzionale, Route 66/Hackberry/Seligman opzionali, Mather Point, Yavapai, Powell/Hopi/Mohave Point, Desert View Drive se tempo",
       "Google Maps": "https://www.google.com/maps/dir/Las+Vegas,+NV/Grand+Canyon+Village,+AZ",
-      "Note": "Dormire il più vicino possibile al canyon, non troppo lontano tipo Flagstaff se possibile. Se c’è nebbia al mattino/pomeriggio, provare più viewpoint."
+      "Note": "Dormire il più vicino possibile al canyon, non troppo lontano tipo Flagstaff se possibile. Se c’è nebbia al mattino/pomeriggio, provare più viewpoint.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Grand+Canyon+South+Rim+sunset&sig=1 | https://source.unsplash.com/1600x900/?Grand+Canyon+Desert+View+Watchtower&sig=2 | https://source.unsplash.com/1600x900/?Route+66+Arizona+Seligman&sig=3 | https://source.unsplash.com/1600x900/?Hoover+Dam+Nevada+Arizona&sig=4",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-10",
@@ -84,7 +94,9 @@
       "Priorità del giorno": "Desert View Drive + Horseshoe Bend + Antelope Canyon prenotato",
       "Da vedere": "Desert View Watchtower, Horseshoe Bend, Lower/Upper Antelope Canyon, Lake Powell/Glen Canyon Dam viewpoint se avanza tempo",
       "Google Maps": "https://www.google.com/maps/dir/Grand+Canyon+Village,+AZ/Page,+AZ/Horseshoe+Bend,+Page,+AZ/Antelope+Canyon,+AZ",
-      "Note": "Horseshoe Bend è must secondo la guida, ma breve. Antelope va prenotato e bisogna arrivare prima dell’orario tour. Evitare deviazioni extra dopo Antelope."
+      "Note": "Horseshoe Bend è must secondo la guida, ma breve. Antelope va prenotato e bisogna arrivare prima dell’orario tour. Evitare deviazioni extra dopo Antelope.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Horseshoe+Bend+Arizona&sig=1 | https://source.unsplash.com/1600x900/?Lower+Antelope+Canyon+Page+Arizona&sig=2 | https://source.unsplash.com/1600x900/?Lake+Powell+Glen+Canyon+Arizona&sig=3",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-11",
@@ -95,7 +107,9 @@
       "Priorità del giorno": "Canyon Overlook + shuttle Zion Canyon se riuscite",
       "Da vedere": "Kanab breve stop opzionale, Zion-Mt. Carmel Highway, Canyon Overlook Trail, Zion shuttle, Temple of Sinawava, Riverside Walk, Zion Canyon Brew Pub",
       "Google Maps": "https://www.google.com/maps/dir/Page,+AZ/Zion+National+Park,+UT/Springdale,+UT",
-      "Note": "Canyon Overlook è la mini-hike da fare assolutamente secondo la guida. Zion può essere affollato: parcheggiare e usare shuttle. Kanab solo come stop breve."
+      "Note": "Canyon Overlook è la mini-hike da fare assolutamente secondo la guida. Zion può essere affollato: parcheggiare e usare shuttle. Kanab solo come stop breve.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Horseshoe+Bend+Arizona&sig=1 | https://source.unsplash.com/1600x900/?Lower+Antelope+Canyon+Page+Arizona&sig=2 | https://source.unsplash.com/1600x900/?Lake+Powell+Glen+Canyon+Arizona&sig=3",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     },
     {
       "Data": "2026-07-12",
@@ -106,7 +120,9 @@
       "Priorità del giorno": "Trasferimento finale verso SLC",
       "Da vedere": "Ultimo viewpoint a Zion se dormite vicini, Cedar City/St. George solo come stop logistici, arrivo a Salt Lake City",
       "Google Maps": "https://www.google.com/maps/dir/Zion+National+Park,+UT/Salt+Lake+City,+UT",
-      "Note": "Niente deviazioni lunghe: la priorità è arrivare a SLC."
+      "Note": "Niente deviazioni lunghe: la priorità è arrivare a SLC.",
+      "Immagini sfondo": "https://source.unsplash.com/1600x900/?Zion+National+Park+Utah+road+trip&sig=1 | https://source.unsplash.com/1600x900/?Salt+Lake+City+Utah+skyline&sig=2 | https://source.unsplash.com/1600x900/?Utah+mountains+road+trip&sig=3",
+      "Fonte immagini": "Unsplash Source: immagini generate da query di viaggio/luogo; sostituibili con URL diretti se preferite."
     }
   ],
   "cose_da_fare": [
@@ -118,7 +134,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0",
       "Link utile": "https://www.goldengate.org/bridge/visiting-the-bridge/",
-      "Note": "Viewpoint o tramonto se meteo ok. Possibile anche lato opposto ponte se avete auto."
+      "Note": "Viewpoint o tramonto se meteo ok. Possibile anche lato opposto ponte se avete auto.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Golden+Gate+Bridge+San+Francisco&sig=100",
+      "Fonte immagine": "Unsplash Source query: Golden Gate Bridge San Francisco"
     },
     {
       "Data": "2026-07-04",
@@ -128,7 +146,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0",
       "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Palace-of-Fine-Arts-69",
-      "Note": "Comodo nello stesso cluster del Golden Gate."
+      "Note": "Comodo nello stesso cluster del Golden Gate.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Palace+of+Fine+Arts+San+Francisco&sig=101",
+      "Fonte immagine": "Unsplash Source query: Palace of Fine Arts San Francisco"
     },
     {
       "Data": "2026-07-04",
@@ -138,7 +158,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0",
       "Link utile": "https://www.pier39.com/",
-      "Note": "Cluster turistico ma comodo; fare senza dedicarci mezza giornata."
+      "Note": "Cluster turistico ma comodo; fare senza dedicarci mezza giornata.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Pier+39+Fishermans+Wharf+San+Francisco&sig=102",
+      "Fonte immagine": "Unsplash Source query: Pier 39 Fishermans Wharf San Francisco"
     },
     {
       "Data": "2026-07-04",
@@ -148,7 +170,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://www.sftravel.com/things-to-do/attractions/iconic-sf/lombard-street",
-      "Note": "Da fare se passa lungo il percorso, non come priorità assoluta."
+      "Note": "Da fare se passa lungo il percorso, non come priorità assoluta.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Lombard+Street+San+Francisco&sig=103",
+      "Fonte immagine": "Unsplash Source query: Lombard Street San Francisco"
     },
     {
       "Data": "2026-07-04",
@@ -158,7 +182,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "8 a corsa circa",
       "Link utile": "https://www.sfmta.com/getting-around/muni/cable-cars",
-      "Note": "Coda variabile. Utile se volete fare esperienza classica senza usare troppo l’auto."
+      "Note": "Coda variabile. Utile se volete fare esperienza classica senza usare troppo l’auto.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?San+Francisco+cable+car&sig=104",
+      "Fonte immagine": "Unsplash Source query: San Francisco cable car"
     },
     {
       "Data": "2026-07-05",
@@ -168,7 +194,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "47.95 a persona circa",
       "Link utile": "https://www.cityexperiences.com/san-francisco/city-cruises/alcatraz/tour-options/",
-      "Note": "Prenotare prima; nella guida è indicato come esperienza che merita."
+      "Note": "Prenotare prima; nella guida è indicato come esperienza che merita.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Alcatraz+Island+San+Francisco&sig=105",
+      "Fonte immagine": "Unsplash Source query: Alcatraz Island San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -178,7 +206,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0",
       "Link utile": "https://www.ferrybuildingmarketplace.com/",
-      "Note": "Comodo prima/dopo zona Pier/Alcatraz."
+      "Note": "Comodo prima/dopo zona Pier/Alcatraz.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Ferry+Building+San+Francisco&sig=106",
+      "Fonte immagine": "Unsplash Source query: Ferry Building San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -188,7 +218,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://www.sftravel.com/things-to-do/attractions/neighborhoods/chinatown",
-      "Note": "Da collegare con Coit Tower/Ferry Building se logisticamente comodo."
+      "Note": "Da collegare con Coit Tower/Ferry Building se logisticamente comodo.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Chinatown+San+Francisco&sig=107",
+      "Fonte immagine": "Unsplash Source query: Chinatown San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -198,7 +230,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "10-15 circa",
       "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Coit-Tower-290",
-      "Note": "Vista bella; salire solo se avete tempo e meteo pulito."
+      "Note": "Vista bella; salire solo se avete tempo e meteo pulito.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Coit+Tower+San+Francisco&sig=108",
+      "Fonte immagine": "Unsplash Source query: Coit Tower San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -208,7 +242,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://clarionalleymuralproject.org/",
-      "Note": "Street art; meglio di giorno."
+      "Note": "Street art; meglio di giorno.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Clarion+Alley+San+Francisco+murals&sig=109",
+      "Fonte immagine": "Unsplash Source query: Clarion Alley San Francisco murals"
     },
     {
       "Data": "2026-07-05",
@@ -218,7 +254,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Alamo-Square-151",
-      "Note": "Stop rapido, buono se passate da Mission/Haight."
+      "Note": "Stop rapido, buono se passate da Mission/Haight.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Painted+Ladies+Alamo+Square+San+Francisco&sig=110",
+      "Fonte immagine": "Unsplash Source query: Painted Ladies Alamo Square San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -228,7 +266,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://sfrecpark.org/770/Golden-Gate-Park",
-      "Note": "Scegliere solo una parte del parco: è grande."
+      "Note": "Scegliere solo una parte del parco: è grande.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Golden+Gate+Bridge+San+Francisco&sig=111",
+      "Fonte immagine": "Unsplash Source query: Golden Gate Bridge San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -238,7 +278,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "20-25 circa",
       "Link utile": "https://www.famsf.org/visit/de-young",
-      "Note": "La guida segnala che il ticket può includere anche Legion of Honor lo stesso giorno. Controllare prezzi/aperture."
+      "Note": "La guida segnala che il ticket può includere anche Legion of Honor lo stesso giorno. Controllare prezzi/aperture.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?De+Young+Museum+San+Francisco&sig=112",
+      "Fonte immagine": "Unsplash Source query: De Young Museum San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -248,7 +290,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "30 circa",
       "Link utile": "https://www.sfmoma.org/visit/",
-      "Note": "Opzionale solo se meteo brutto o interesse musei."
+      "Note": "Opzionale solo se meteo brutto o interesse musei.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?SFMOMA+San+Francisco&sig=113",
+      "Fonte immagine": "Unsplash Source query: SFMOMA San Francisco"
     },
     {
       "Data": "2026-07-05",
@@ -258,7 +302,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0",
       "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Twin-Peaks-384",
-      "Note": "Extra se c’è visibilità e avete auto."
+      "Note": "Extra se c’è visibilità e avete auto.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Twin+Peaks+San+Francisco+view&sig=114",
+      "Fonte immagine": "Unsplash Source query: Twin Peaks San Francisco view"
     },
     {
       "Data": "2026-07-06",
@@ -268,7 +314,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "benzina/parcheggi",
       "Link utile": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA",
-      "Note": "Consiglio guida: paesaggio bello, meglio evitare di arrivare troppo tardi."
+      "Note": "Consiglio guida: paesaggio bello, meglio evitare di arrivare troppo tardi.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Guidare+con+luce+%2B+massimo+1-2+soste+San+Francisco+%E2%86%92+Santa+Barbara+travel&sig=115",
+      "Fonte immagine": "Unsplash Source query: Guidare con luce + massimo 1-2 soste San Francisco → Santa Barbara travel"
     },
     {
       "Data": "2026-07-06",
@@ -278,7 +326,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.google.com/maps/search/Monterey+Carmel+California",
-      "Note": "Solo se partenza presto; altrimenti tirate verso Santa Barbara."
+      "Note": "Solo se partenza presto; altrimenti tirate verso Santa Barbara.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Monterey+California+coast&sig=116",
+      "Fonte immagine": "Unsplash Source query: Monterey California coast"
     },
     {
       "Data": "2026-07-06",
@@ -288,7 +338,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.google.com/maps/search/San+Luis+Obispo+Pismo+Beach",
-      "Note": "Più compatibile con US-101 rispetto alla costa lenta."
+      "Note": "Più compatibile con US-101 rispetto alla costa lenta.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Pismo+Beach+California&sig=117",
+      "Fonte immagine": "Unsplash Source query: Pismo Beach California"
     },
     {
       "Data": "2026-07-06",
@@ -298,7 +350,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://stearnswharf.org/",
-      "Note": "Da fare la sera se arrivate non troppo tardi."
+      "Note": "Da fare la sera se arrivate non troppo tardi.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Stearns+Wharf+Santa+Barbara&sig=118",
+      "Fonte immagine": "Unsplash Source query: Stearns Wharf Santa Barbara"
     },
     {
       "Data": "2026-07-07",
@@ -308,7 +362,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://santabarbaraca.gov/government/departments/parks-recreation/parks/parks-recreation-facilities/courthouse-gardens",
-      "Note": "Fare breve prima di scendere verso LA."
+      "Note": "Fare breve prima di scendere verso LA.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Santa+Barbara+County+Courthouse+California&sig=119",
+      "Fonte immagine": "Unsplash Source query: Santa Barbara County Courthouse California"
     },
     {
       "Data": "2026-07-07",
@@ -318,7 +374,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "70-80 circa",
       "Link utile": "https://www.wbstudiotour.com/",
-      "Note": "La guida lo consiglia molto: set veri/ricostruiti e dietro le quinte. Inserirlo solo se accettate di sacrificare altro a LA."
+      "Note": "La guida lo consiglia molto: set veri/ricostruiti e dietro le quinte. Inserirlo solo se accettate di sacrificare altro a LA.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Warner+Bros+Studio+Tour+Hollywood&sig=120",
+      "Fonte immagine": "Unsplash Source query: Warner Bros Studio Tour Hollywood"
     },
     {
       "Data": "2026-07-07",
@@ -328,7 +386,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0+",
       "Link utile": "https://lovebeverlyhills.com/things-to-do/view/beverly-gardens-park",
-      "Note": "Stop classico e compatibile con il giro verso Hollywood/Griffith."
+      "Note": "Stop classico e compatibile con il giro verso Hollywood/Griffith.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Beverly+Hills+Rodeo+Drive&sig=121",
+      "Fonte immagine": "Unsplash Source query: Beverly Hills Rodeo Drive"
     },
     {
       "Data": "2026-07-07",
@@ -338,7 +398,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.walkoffame.com/",
-      "Note": "La guida dice quick stop: non perderci troppo tempo."
+      "Note": "La guida dice quick stop: non perderci troppo tempo.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Hollywood+Walk+of+Fame+Los+Angeles&sig=122",
+      "Fonte immagine": "Unsplash Source query: Hollywood Walk of Fame Los Angeles"
     },
     {
       "Data": "2026-07-07",
@@ -348,7 +410,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0+",
       "Link utile": "https://griffithobservatory.org/",
-      "Note": "Molto consigliato dalla guida. Parcheggio difficile vicino al tramonto; controllare chiusure/aperture."
+      "Note": "Molto consigliato dalla guida. Parcheggio difficile vicino al tramonto; controllare chiusure/aperture.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Griffith+Observatory+Los+Angeles+Hollywood+sign&sig=123",
+      "Fonte immagine": "Unsplash Source query: Griffith Observatory Los Angeles Hollywood sign"
     },
     {
       "Data": "2026-07-07",
@@ -358,7 +422,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0+ parcheggio",
       "Link utile": "https://www.santamonica.com/places-to-go/santa-monica-pier/",
-      "Note": "Parcheggio spesso circa 20$/giorno; la guida consiglia di evitare dopo il tramonto."
+      "Note": "Parcheggio spesso circa 20$/giorno; la guida consiglia di evitare dopo il tramonto.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Santa+Monica+Pier+California&sig=124",
+      "Fonte immagine": "Unsplash Source query: Santa Monica Pier California"
     },
     {
       "Data": "2026-07-07",
@@ -368,7 +434,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0+ parcheggio",
       "Link utile": "https://www.visitcalifornia.com/experience/venice-canals/",
-      "Note": "Da fare con Santa Monica/Venice, meglio spostare l’auto se necessario."
+      "Note": "Da fare con Santa Monica/Venice, meglio spostare l’auto se necessario.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Venice+Canals+Los+Angeles&sig=125",
+      "Fonte immagine": "Unsplash Source query: Venice Canals Los Angeles"
     },
     {
       "Data": "2026-07-07",
@@ -378,7 +446,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.discoverlosangeles.com/things-to-do/los-angeles-union-station",
-      "Note": "Solo se avete energie. Evitare Skid Row. City Hall/edifici: controllare aperture."
+      "Note": "Solo se avete energie. Evitare Skid Row. City Hall/edifici: controllare aperture.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Downtown+Los+Angeles+skyline&sig=126",
+      "Fonte immagine": "Unsplash Source query: Downtown Los Angeles skyline"
     },
     {
       "Data": "2026-07-07",
@@ -388,7 +458,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+ parcheggio",
       "Link utile": "https://www.lacma.org/urban-light",
-      "Note": "Opzionale; Urban Light meglio la sera, ma non caricare troppo la giornata."
+      "Note": "Opzionale; Urban Light meglio la sera, ma non caricare troppo la giornata.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?The+Grove+Los+Angeles&sig=127",
+      "Fonte immagine": "Unsplash Source query: The Grove Los Angeles"
     },
     {
       "Data": "2026-07-07",
@@ -398,7 +470,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "variabile",
       "Link utile": "https://www.bestparking.com/",
-      "Note": "Utile per Santa Monica/Venice, Hollywood, Downtown."
+      "Note": "Utile per Santa Monica/Venice, Hollywood, Downtown.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Los+Angeles+skyline+parking&sig=128",
+      "Fonte immagine": "Unsplash Source query: Los Angeles skyline parking"
     },
     {
       "Data": "2026-07-08",
@@ -408,7 +482,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0",
       "Link utile": "https://www.lasvegasnevada.gov/Residents/Parking-Transportation/Welcome-to-Las-Vegas-Sign",
-      "Note": "Stop rapido entrando o uscendo, se comodo."
+      "Note": "Stop rapido entrando o uscendo, se comodo.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Welcome+to+Fabulous+Las+Vegas+sign&sig=129",
+      "Fonte immagine": "Unsplash Source query: Welcome to Fabulous Las Vegas sign"
     },
     {
       "Data": "2026-07-08",
@@ -418,7 +494,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0",
       "Link utile": "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html",
-      "Note": "Classico; fontane e giardino interno gratis."
+      "Note": "Classico; fontane e giardino interno gratis.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Bellagio+fountains+Las+Vegas&sig=130",
+      "Fonte immagine": "Unsplash Source query: Bellagio fountains Las Vegas"
     },
     {
       "Data": "2026-07-08",
@@ -428,7 +506,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.venetianlasvegas.com/",
-      "Note": "La guida lo consiglia perché architettonicamente scenico."
+      "Note": "La guida lo consiglia perché architettonicamente scenico.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?The+Venetian+Las+Vegas+canals&sig=131",
+      "Fonte immagine": "Unsplash Source query: The Venetian Las Vegas canals"
     },
     {
       "Data": "2026-07-08",
@@ -438,7 +518,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.wynnlasvegas.com/entertainment/lake-of-dreams",
-      "Note": "Show serale gratuito/da verificare; opzionale se siete sulla Strip."
+      "Note": "Show serale gratuito/da verificare; opzionale se siete sulla Strip.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Wynn+Las+Vegas+Lake+of+Dreams&sig=132",
+      "Fonte immagine": "Unsplash Source query: Wynn Las Vegas Lake of Dreams"
     },
     {
       "Data": "2026-07-08",
@@ -448,7 +530,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0 da fuori / ticket variabile",
       "Link utile": "https://www.thesphere.com/shows",
-      "Note": "Da fuori gratis. Dentro solo con ticket evento/film."
+      "Note": "Da fuori gratis. Dentro solo con ticket evento/film.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Sphere+Las+Vegas+night&sig=133",
+      "Fonte immagine": "Unsplash Source query: Sphere Las Vegas night"
     },
     {
       "Data": "2026-07-08",
@@ -458,7 +542,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0+",
       "Link utile": "https://vegasexperience.com/",
-      "Note": "La guida dice diversa dalla Strip e pedonale. Viva Vision ogni sera."
+      "Note": "La guida dice diversa dalla Strip e pedonale. Viva Vision ogni sera.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Fremont+Street+Experience+Las+Vegas&sig=134",
+      "Fonte immagine": "Unsplash Source query: Fremont Street Experience Las Vegas"
     },
     {
       "Data": "2026-07-08",
@@ -468,7 +554,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://downtowncontainerpark.com/",
-      "Note": "Opzionale se fate Fremont."
+      "Note": "Opzionale se fate Fremont.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Downtown+Container+Park+Las+Vegas&sig=135",
+      "Fonte immagine": "Unsplash Source query: Downtown Container Park Las Vegas"
     },
     {
       "Data": "2026-07-08",
@@ -478,7 +566,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "20-30 circa",
       "Link utile": "https://www.neonmuseum.org/",
-      "Note": "Interessante ma da prenotare/valutare solo se avete tempo."
+      "Note": "Interessante ma da prenotare/valutare solo se avete tempo.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Neon+Museum+Las+Vegas&sig=136",
+      "Fonte immagine": "Unsplash Source query: Neon Museum Las Vegas"
     },
     {
       "Data": "2026-07-08",
@@ -488,7 +578,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://gspawn.com/",
-      "Note": "Solo se siete fan; nella guida era stato fatto per interesse personale."
+      "Note": "Solo se siete fan; nella guida era stato fatto per interesse personale.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Gold+Silver+Pawn+Shop+Las+Vegas&sig=137",
+      "Fonte immagine": "Unsplash Source query: Gold Silver Pawn Shop Las Vegas"
     },
     {
       "Data": "2026-07-08",
@@ -498,7 +590,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0 ma prenotazione obbligatoria",
       "Link utile": "https://www.louisvuitton.com/eng-us/stories/akhob",
-      "Note": "Opzionale; gratuito ma prenotazione spesso necessaria."
+      "Note": "Opzionale; gratuito ma prenotazione spesso necessaria.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Las+Vegas+art+installation+James+Turrell&sig=138",
+      "Fonte immagine": "Unsplash Source query: Las Vegas art installation James Turrell"
     },
     {
       "Data": "2026-07-09",
@@ -508,7 +602,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "parcheggio/tour variabile",
       "Link utile": "https://www.usbr.gov/lc/hooverdam/",
-      "Note": "Compatibile con il trasferimento se partite presto."
+      "Note": "Compatibile con il trasferimento se partite presto.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Hoover+Dam+Nevada+Arizona&sig=139",
+      "Fonte immagine": "Unsplash Source query: Hoover Dam Nevada Arizona"
     },
     {
       "Data": "2026-07-09",
@@ -518,7 +614,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.google.com/maps/search/Hackberry+General+Store+Seligman+Route+66",
-      "Note": "La guida segnala che Seligman/Hackberry sono stop tipici Route 66; non esagerare con le soste."
+      "Note": "La guida segnala che Seligman/Hackberry sono stop tipici Route 66; non esagerare con le soste.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Hackberry+General+Store+Route+66+Arizona&sig=140",
+      "Fonte immagine": "Unsplash Source query: Hackberry General Store Route 66 Arizona"
     },
     {
       "Data": "2026-07-09",
@@ -528,7 +626,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.google.com/maps/search/Oatman+Arizona",
-      "Note": "Leggero detour: inserirla solo se partite molto presto. Panorama bello secondo guida, città non imperdibile."
+      "Note": "Leggero detour: inserirla solo se partite molto presto. Panorama bello secondo guida, città non imperdibile.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Oatman+Arizona+Route+66+ghost+town&sig=141",
+      "Fonte immagine": "Unsplash Source query: Oatman Arizona Route 66 ghost town"
     },
     {
       "Data": "2026-07-09",
@@ -538,7 +638,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "coperto dal pass",
       "Link utile": "https://www.nps.gov/grca/planyourvisit/south-rim.htm",
-      "Note": "Punti comodi vicino Visitor Center."
+      "Note": "Punti comodi vicino Visitor Center.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Grand+Canyon+South+Rim+Mather+Point&sig=142",
+      "Fonte immagine": "Unsplash Source query: Grand Canyon South Rim Mather Point"
     },
     {
       "Data": "2026-07-09",
@@ -548,7 +650,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "coperto dal pass",
       "Link utile": "https://www.nps.gov/grca/planyourvisit/shuttle-buses.htm",
-      "Note": "La guida lo consiglia; controllare shuttle perché andata/ritorno non fermano sempre uguale."
+      "Note": "La guida lo consiglia; controllare shuttle perché andata/ritorno non fermano sempre uguale.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Grand+Canyon+Powell+Point+Hopi+Point&sig=143",
+      "Fonte immagine": "Unsplash Source query: Grand Canyon Powell Point Hopi Point"
     },
     {
       "Data": "2026-07-09",
@@ -558,7 +662,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "coperto dal pass",
       "Link utile": "https://www.nps.gov/grca/planyourvisit/desert-view.htm",
-      "Note": "Da fare anche il giorno dopo uscendo verso Page."
+      "Note": "Da fare anche il giorno dopo uscendo verso Page.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Grand+Canyon+Desert+View+Watchtower&sig=144",
+      "Fonte immagine": "Unsplash Source query: Grand Canyon Desert View Watchtower"
     },
     {
       "Data": "2026-07-10",
@@ -568,7 +674,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "0",
       "Link utile": "https://www.google.com/maps/dir/Grand+Canyon+Village,+AZ/Page,+AZ",
-      "Note": "Non fissarsi su un solo viewpoint: se meteo/nebbia cambia, provarne più di uno."
+      "Note": "Non fissarsi su un solo viewpoint: se meteo/nebbia cambia, provarne più di uno.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Grand+Canyon+Desert+View+Watchtower&sig=145",
+      "Fonte immagine": "Unsplash Source query: Grand Canyon Desert View Watchtower"
     },
     {
       "Data": "2026-07-10",
@@ -578,7 +686,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "10 auto circa",
       "Link utile": "https://cityofpage.org/official-horseshoe-bend-information",
-      "Note": "Must secondo guida; breve ma molto bello. Camminata dal parcheggio."
+      "Note": "Must secondo guida; breve ma molto bello. Camminata dal parcheggio.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Horseshoe+Bend+Arizona&sig=146",
+      "Fonte immagine": "Unsplash Source query: Horseshoe Bend Arizona"
     },
     {
       "Data": "2026-07-10",
@@ -588,7 +698,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "80-100+ a persona circa",
       "Link utile": "https://www.antelopelowercanyon.com/",
-      "Note": "La guida ha fatto Lower e lo definisce stupendo. Prenotare slot e arrivare prima."
+      "Note": "La guida ha fatto Lower e lo definisce stupendo. Prenotare slot e arrivare prima.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Lower+Antelope+Canyon+Arizona&sig=147",
+      "Fonte immagine": "Unsplash Source query: Lower Antelope Canyon Arizona"
     },
     {
       "Data": "2026-07-10",
@@ -598,7 +710,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "100-120+ a persona circa",
       "Link utile": "https://navajotours.com/",
-      "Note": "Alternativa più famosa/cara. Valutare in base a slot/prezzo."
+      "Note": "Alternativa più famosa/cara. Valutare in base a slot/prezzo.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Upper+Antelope+Canyon+Arizona&sig=148",
+      "Fonte immagine": "Unsplash Source query: Upper Antelope Canyon Arizona"
     },
     {
       "Data": "2026-07-10",
@@ -608,7 +722,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.nps.gov/glca/planyourvisit/placestogo.htm",
-      "Note": "Extra breve se avete tempo prima/dopo Antelope."
+      "Note": "Extra breve se avete tempo prima/dopo Antelope.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Glen+Canyon+Dam+Lake+Powell&sig=149",
+      "Fonte immagine": "Unsplash Source query: Glen Canyon Dam Lake Powell"
     },
     {
       "Data": "2026-07-11",
@@ -618,7 +734,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.google.com/maps/search/Kanab+Utah+restaurants",
-      "Note": "Kanab è sulla direttrice verso Zion; non caricarlo troppo."
+      "Note": "Kanab è sulla direttrice verso Zion; non caricarlo troppo.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Kanab+Utah+red+cliffs&sig=150",
+      "Fonte immagine": "Unsplash Source query: Kanab Utah red cliffs"
     },
     {
       "Data": "2026-07-11",
@@ -628,7 +746,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0+",
       "Link utile": "https://www.littlehollywoodmuseum.org/",
-      "Note": "Solo se vi serve pausa; western set gratuito/rapido."
+      "Note": "Solo se vi serve pausa; western set gratuito/rapido.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Kanab+Utah+red+cliffs&sig=151",
+      "Fonte immagine": "Unsplash Source query: Kanab Utah red cliffs"
     },
     {
       "Data": "2026-07-11",
@@ -638,7 +758,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "0",
       "Link utile": "https://www.google.com/maps/search/Sand+Caves+Kanab+Dinosaur+Tracks",
-      "Note": "Fattibile ma rischia di togliere tempo a Zion; scarpe adatte, evitare caldo forte."
+      "Note": "Fattibile ma rischia di togliere tempo a Zion; scarpe adatte, evitare caldo forte.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Kanab+Utah+red+cliffs&sig=152",
+      "Fonte immagine": "Unsplash Source query: Kanab Utah red cliffs"
     },
     {
       "Data": "2026-07-11",
@@ -648,7 +770,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "coperto dal pass",
       "Link utile": "https://www.nps.gov/zion/planyourvisit/the-zion-mount-carmel-tunnel.htm",
-      "Note": "Arrivando da Page/Kanab è la strada scenica naturale."
+      "Note": "Arrivando da Page/Kanab è la strada scenica naturale.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Carmel+by+the+Sea+California&sig=153",
+      "Fonte immagine": "Unsplash Source query: Carmel by the Sea California"
     },
     {
       "Data": "2026-07-11",
@@ -658,7 +782,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "coperto dal pass",
       "Link utile": "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm",
-      "Note": "Da fare assolutamente secondo guida; breve ma attenzione caldo/parcheggio."
+      "Note": "Da fare assolutamente secondo guida; breve ma attenzione caldo/parcheggio.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Zion+Canyon+Overlook+Trail&sig=154",
+      "Fonte immagine": "Unsplash Source query: Zion Canyon Overlook Trail"
     },
     {
       "Data": "2026-07-11",
@@ -668,7 +794,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "coperto dal pass",
       "Link utile": "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm",
-      "Note": "Dopo Canyon Overlook bisogna parcheggiare e usare shuttle per lo Zion Canyon."
+      "Note": "Dopo Canyon Overlook bisogna parcheggiare e usare shuttle per lo Zion Canyon.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Temple+of+Sinawava+Zion+National+Park&sig=155",
+      "Fonte immagine": "Unsplash Source query: Temple of Sinawava Zion National Park"
     },
     {
       "Data": "2026-07-11",
@@ -678,7 +806,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "coperto dal pass",
       "Link utile": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm",
-      "Note": "Facile e scenico; dopo inizia The Narrows, da fare solo se preparati."
+      "Note": "Facile e scenico; dopo inizia The Narrows, da fare solo se preparati.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Zion+Riverside+Walk&sig=156",
+      "Fonte immagine": "Unsplash Source query: Zion Riverside Walk"
     },
     {
       "Data": "2026-07-11",
@@ -688,7 +818,9 @@
       "Priorità": "Media",
       "Costo stimato USD": "variabile",
       "Link utile": "https://www.zionbrewery.com/",
-      "Note": "Food/beverage consigliato nella guida come stop vicino Zion."
+      "Note": "Food/beverage consigliato nella guida come stop vicino Zion.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Springdale+Utah+Zion+Canyon&sig=157",
+      "Fonte immagine": "Unsplash Source query: Springdale Utah Zion Canyon"
     },
     {
       "Data": "2026-07-11",
@@ -698,7 +830,9 @@
       "Priorità": "Bassa",
       "Costo stimato USD": "variabile",
       "Link utile": "https://www.google.com/maps/search/The+Cave+Cafe+Zion",
-      "Note": "Opzione colazione/chai se comodo, controllare apertura."
+      "Note": "Opzione colazione/chai se comodo, controllare apertura.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?The+Cave+Cafe+Kanab+Utah&sig=158",
+      "Fonte immagine": "Unsplash Source query: The Cave Cafe Kanab Utah"
     },
     {
       "Data": "2026-07-12",
@@ -708,7 +842,9 @@
       "Priorità": "Alta",
       "Costo stimato USD": "benzina",
       "Link utile": "https://www.google.com/maps/dir/Zion+National+Park,+UT/Salt+Lake+City,+UT",
-      "Note": "Niente deviazioni lunghe: arrivo a SLC come priorità."
+      "Note": "Niente deviazioni lunghe: arrivo a SLC come priorità.",
+      "Immagine sfondo": "https://source.unsplash.com/1600x900/?Salt+Lake+City+Utah+skyline&sig=159",
+      "Fonte immagine": "Unsplash Source query: Salt Lake City Utah skyline"
     }
   ],
   "alloggi": [
