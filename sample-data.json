@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "tripName": "USA26 Roadtrip",
+    "travelers": 3,
+    "currency": "USD",
+    "startDate": "2026-07-04",
+    "endDate": "2026-07-12"
+  },
+  "days": [
+    { "id": "d04", "date": "2026-07-04", "label": "Sab 4 lug", "title": "San Francisco", "from": "San Francisco", "to": "San Francisco", "drive": "0h" },
+    { "id": "d05", "date": "2026-07-05", "label": "Dom 5 lug", "title": "San Francisco", "from": "San Francisco", "to": "San Francisco", "drive": "0h" },
+    { "id": "d06", "date": "2026-07-06", "label": "Lun 6 lug", "title": "San Francisco → Santa Barbara", "from": "San Francisco", "to": "Santa Barbara", "drive": "5h45–6h45" },
+    { "id": "d07", "date": "2026-07-07", "label": "Mar 7 lug", "title": "Santa Barbara → Los Angeles", "from": "Santa Barbara", "to": "Los Angeles", "drive": "1h45–2h30" },
+    { "id": "d08", "date": "2026-07-08", "label": "Mer 8 lug", "title": "Los Angeles → Las Vegas", "from": "Los Angeles", "to": "Las Vegas", "drive": "4h30–5h30" },
+    { "id": "d09", "date": "2026-07-09", "label": "Gio 9 lug", "title": "Las Vegas → Grand Canyon South Rim", "from": "Las Vegas", "to": "Grand Canyon South Rim", "drive": "4h30–5h" },
+    { "id": "d10", "date": "2026-07-10", "label": "Ven 10 lug", "title": "Grand Canyon → Page / Antelope", "from": "Grand Canyon South Rim", "to": "Page", "drive": "2h30–3h30" },
+    { "id": "d11", "date": "2026-07-11", "label": "Sab 11 lug", "title": "Page → Zion", "from": "Page", "to": "Zion", "drive": "2h15–3h" },
+    { "id": "d12", "date": "2026-07-12", "label": "Dom 12 lug", "title": "Zion → Salt Lake City", "from": "Zion", "to": "Salt Lake City", "drive": "4h30–5h" }
+  ],
+  "costs": [
+    { "id": "c01", "category": "Parchi", "item": "America the Beautiful Non-Resident Annual Pass", "scope": "Gruppo / veicolo", "amount": 250 },
+    { "id": "c02", "category": "San Francisco", "item": "Alcatraz Day Tour", "scope": "A persona", "amount": 47.95 },
+    { "id": "c03", "category": "Page", "item": "Lower Antelope Canyon", "scope": "A persona", "amount": 80.50 },
+    { "id": "c04", "category": "Page", "item": "Navajo entry fee Antelope", "scope": "A persona", "amount": 15 },
+    { "id": "c05", "category": "Page", "item": "Horseshoe Bend parking", "scope": "Per auto", "amount": 10 }
+  ]
+}
