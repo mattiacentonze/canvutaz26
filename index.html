@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>USA26 Roadtrip Planner</title>
-  <meta name="description" content="Planner pubblico e modificabile per il road trip USA26: San Francisco, Los Angeles, Las Vegas, Grand Canyon, Antelope Canyon, Zion, Salt Lake City." />
+  <meta name="description" content="Planner pubblico in sola lettura per il road trip USA26: San Francisco, Santa Barbara, Los Angeles, Las Vegas, Grand Canyon, Antelope Canyon, Zion, Salt Lake City." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,38 +18,28 @@
         <h1>Roadtrip planner condiviso</h1>
         <p class="hero__subtitle">San Francisco → Santa Barbara → Los Angeles → Las Vegas → Grand Canyon → Page / Antelope → Zion → Salt Lake City.</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" id="editSheetHero" href="#add">Modifica su Google Sheet</a>
+          <a class="btn btn--primary" id="editSheetHero" href="#edit">Modifica su Google Sheet</a>
           <a class="btn btn--ghost" id="mapsFullRoute" href="#" target="_blank" rel="noopener">Apri route completa</a>
         </div>
       </div>
       <aside class="hero__panel" aria-label="Sintesi viaggio">
-        <div class="stat">
-          <span class="stat__label">Persone</span>
-          <strong id="statTravelers">3</strong>
-        </div>
-        <div class="stat">
-          <span class="stat__label">Giorni</span>
-          <strong id="statDays">9</strong>
-        </div>
-        <div class="stat">
-          <span class="stat__label">Guida stimata</span>
-          <strong id="statDrive">—</strong>
-        </div>
-        <div class="stat">
-          <span class="stat__label">Budget parchi</span>
-          <strong>$250 pass</strong>
-        </div>
+        <div class="stat"><span class="stat__label">Persone</span><strong id="statTravelers">3</strong></div>
+        <div class="stat"><span class="stat__label">Giorni</span><strong id="statDays">9</strong></div>
+        <div class="stat"><span class="stat__label">Guida stimata</span><strong id="statDrive">—</strong></div>
+        <div class="stat"><span class="stat__label">Parchi</span><strong>$250 pass</strong></div>
       </aside>
     </header>
 
     <nav class="tabs" aria-label="Navigazione planner">
       <button class="tab is-active" data-tab="overview">Overview</button>
-      <button class="tab" data-tab="itinerary">Itinerario</button>
-      <button class="tab" data-tab="route">Tragitti</button>
+      <button class="tab" data-tab="itinerary">Giorni</button>
+      <button class="tab" data-tab="things">Cose da fare</button>
       <button class="tab" data-tab="costs">Costi</button>
+      <button class="tab" data-tab="bookings">Prenotazioni</button>
       <button class="tab" data-tab="lodging">Alloggi</button>
       <button class="tab" data-tab="docs">Auto & documenti</button>
-      <button class="tab" data-tab="add">Modifica</button>
+      <button class="tab" data-tab="links">Link utili</button>
+      <button class="tab" data-tab="edit">Modifica</button>
       <button class="tab" data-tab="backup">Backup</button>
     </nav>
 
@@ -57,200 +47,75 @@
       <section id="overview" class="tab-panel is-visible">
         <div class="grid grid--two">
           <article class="card card--large">
-            <div class="section-heading">
-              <p class="eyebrow">Piano sintetico</p>
-              <h2>Giro bello, ma tirato</h2>
-            </div>
-            <p>Questa versione è pensata come road trip denso: ogni giorno ha spostamento + visita. Le città sono assaggi; i parchi vanno gestiti con orari mattina/tramonto e poco hiking, soprattutto in luglio.</p>
+            <div class="section-heading"><p class="eyebrow">Piano sintetico</p><h2>Giro bello, ma tirato</h2></div>
+            <p>Versione semplificata: niente orari, niente ID, niente timestamp. Ogni giorno ha priorità e cose da fare; decidete sul momento l’ordine reale.</p>
             <div id="overviewHighlights" class="pill-list"></div>
           </article>
           <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Da bloccare prima</p>
-              <h2>Prenotazioni critiche</h2>
-            </div>
+            <div class="section-heading"><p class="eyebrow">Da bloccare prima</p><h2>Prenotazioni critiche</h2></div>
             <ul class="checklist">
-              <li>Antelope Canyon: tour guidato obbligatorio, slot da prenotare.</li>
-              <li>Alcatraz: biglietto Day Tour se volete farlo a San Francisco.</li>
-              <li>Alloggi vicino a Grand Canyon / Page / Zion: luglio è alta stagione.</li>
-              <li>America the Beautiful Non-Resident Annual Pass: un solo pass per la macchina.</li>
+              <li>Antelope Canyon: tour guidato obbligatorio, prenotare lo slot.</li>
+              <li>Alcatraz: biglietto ufficiale se volete farlo a San Francisco.</li>
+              <li>Alloggi Grand Canyon / Page / Zion: luglio è alta stagione.</li>
+              <li>America the Beautiful Non-Resident Annual Pass: un solo pass per il veicolo/gruppo.</li>
             </ul>
           </article>
         </div>
         <section class="card">
-          <div class="section-heading section-heading--row">
-            <div>
-              <p class="eyebrow">Timeline</p>
-              <h2>Schema giorno per giorno</h2>
-            </div>
-            <button class="btn btn--small" id="printBtn">Stampa / PDF</button>
-          </div>
+          <div class="section-heading section-heading--row"><div><p class="eyebrow">Timeline</p><h2>Schema giorno per giorno</h2></div><button class="btn btn--small" id="printBtn">Stampa / PDF</button></div>
           <div id="timelineMini" class="timeline-mini"></div>
         </section>
       </section>
 
       <section id="itinerary" class="tab-panel">
-        <div class="section-heading section-heading--row">
-          <div>
-            <p class="eyebrow">Planner operativo</p>
-            <h2>Itinerario dettagliato</h2>
-          </div>
-          <select id="dayFilter" class="input input--small" aria-label="Filtra per giorno"></select>
-        </div>
-        <div id="itineraryList" class="day-list"></div>
+        <div class="section-heading"><p class="eyebrow">Planner operativo</p><h2>Giorni e tragitti</h2></div>
+        <div id="daysList" class="day-list"></div>
       </section>
 
-      <section id="route" class="tab-panel">
-        <div class="section-heading">
-          <p class="eyebrow">Driving plan</p>
-          <h2>Tragitti e soste</h2>
-        </div>
-        <div id="routeList" class="route-list"></div>
+      <section id="things" class="tab-panel">
+        <div class="section-heading section-heading--row"><div><p class="eyebrow">Senza orari</p><h2>Cose da fare</h2></div><select id="dayFilter" class="input input--small"></select></div>
+        <div id="thingsList" class="cards-grid"></div>
       </section>
 
       <section id="costs" class="tab-panel">
         <div class="grid grid--two">
-          <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Budget</p>
-              <h2>Costi stimati</h2>
-            </div>
-            <div id="costSummary" class="cost-summary"></div>
-          </article>
-          <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Nota importante</p>
-              <h2>Parchi nazionali</h2>
-            </div>
-            <p>Per 3 italiani nel 2026 è molto più sensato comprare un solo <strong>America the Beautiful Non-Resident Annual Pass</strong> da $250: copre il veicolo privato e fa evitare il surcharge non residenti nei parchi inclusi.</p>
-            <p class="muted">Non copre Antelope Canyon, Horseshoe Bend, Monument Valley e parcheggi/servizi locali.</p>
-          </article>
+          <article class="card"><div class="section-heading"><p class="eyebrow">Budget</p><h2>Costi stimati</h2></div><div id="costSummary" class="cost-summary"></div></article>
+          <article class="card"><div class="section-heading"><p class="eyebrow">Nota parchi</p><h2>Pass annuale</h2></div><p>Per 3 italiani nel 2026, Grand Canyon + Zion rendono quasi sempre conveniente il pass non residenti da $250.</p><p class="muted">Non copre Antelope Canyon, Horseshoe Bend, Monument Valley o parcheggi locali.</p></article>
         </div>
         <div id="costTable" class="table-card"></div>
       </section>
 
-      <section id="lodging" class="tab-panel">
-        <div class="section-heading">
-          <p class="eyebrow">Sleep plan</p>
-          <h2>Alloggi e check-in</h2>
-        </div>
-        <div id="lodgingList" class="cards-grid"></div>
-      </section>
+      <section id="bookings" class="tab-panel"><div class="section-heading"><p class="eyebrow">Azioni</p><h2>Cose da prenotare</h2></div><div id="bookingsList" class="cards-grid"></div></section>
+      <section id="lodging" class="tab-panel"><div class="section-heading"><p class="eyebrow">Sleep plan</p><h2>Alloggi</h2></div><div id="lodgingList" class="cards-grid"></div></section>
+      <section id="docs" class="tab-panel"><div class="grid grid--two"><article class="card"><div class="section-heading"><p class="eyebrow">Auto</p><h2>Noleggio e guida</h2></div><div id="autoList"></div></article><article class="card"><div class="section-heading"><p class="eyebrow">Checklist</p><h2>Documenti</h2></div><div id="docsList"></div></article></div><section class="card"><div class="section-heading"><p class="eyebrow">Note condivise</p><h2>Appunti</h2></div><div id="notesList" class="notes-list"></div></section></section>
+      <section id="links" class="tab-panel"><div class="section-heading"><p class="eyebrow">Biglietti e fonti</p><h2>Link utili</h2></div><div id="linksList" class="cards-grid"></div></section>
 
-      <section id="docs" class="tab-panel">
-        <div class="grid grid--two">
-          <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Auto</p>
-              <h2>Noleggio e guida</h2>
-            </div>
-            <div id="carList"></div>
-          </article>
-          <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Checklist</p>
-              <h2>Documenti utili</h2>
-            </div>
-            <div id="docsList"></div>
-          </article>
-        </div>
-        <section class="card">
-          <div class="section-heading">
-            <p class="eyebrow">Note condivise</p>
-            <h2>Appunti liberi</h2>
-          </div>
-          <div id="notesList" class="notes-list"></div>
-        </section>
-      </section>
-
-      <section id="add" class="tab-panel">
+      <section id="edit" class="tab-panel">
         <div class="grid grid--two">
           <article class="card card--large">
-            <div class="section-heading">
-              <p class="eyebrow">Modifica controllata</p>
-              <h2>Il sito è pubblico, il piano si modifica dal Google Sheet</h2>
-            </div>
-            <p>Questa versione non salva modifiche dal sito pubblico. Il planner legge i dati dal Google Sheet, ma la modifica reale resta dentro il foglio condiviso solo con voi tre.</p>
-            <div class="button-row">
-              <a class="btn btn--primary" id="editSheetLink" href="#" target="_blank" rel="noopener">Apri Google Sheet</a>
-              <button class="btn btn--ghost" id="copySheetLinkBtn" type="button">Copia link Sheet</button>
-            </div>
+            <div class="section-heading"><p class="eyebrow">Modifica controllata</p><h2>Si modifica solo dal Google Sheet</h2></div>
+            <p>Il sito pubblico è in sola lettura. Il Google Sheet resta privato e condiviso solo con voi tre come Editor.</p>
+            <div class="button-row"><a class="btn btn--primary" id="editSheetLink" href="#" target="_blank" rel="noopener">Apri Google Sheet</a><button class="btn btn--ghost" id="copySheetLinkBtn" type="button">Copia link Sheet</button></div>
             <p class="form-status" id="sheetLinkStatus"></p>
-            <div class="notice notice--safe">
-              <strong>Regola di sicurezza:</strong> non pubblicare il Google Sheet sul web con permessi di modifica. Condividilo manualmente solo con gli account Google dei due amici come <strong>Editor</strong>.
-            </div>
+            <div class="notice notice--safe"><strong>Colonne semplificate:</strong> non ci sono ID, created at, updated at, core o orari. Aggiungete solo righe e link.</div>
           </article>
-
           <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Come funziona</p>
-              <h2>Workflow consigliato</h2>
-            </div>
-            <ol class="steps-list">
-              <li>Il sito GitHub Pages resta pubblico e leggibile da chiunque abbia il link.</li>
-              <li>Il Google Sheet resta privato: solo voi tre avete permesso <strong>Editor</strong>.</li>
-              <li>Quando modificate righe su Google Sheet, il sito le legge al refresh.</li>
-              <li>Le colonne hanno nomi fissi: non rinominarle, aggiungete solo righe.</li>
-            </ol>
-            <p class="muted">Se vuoi inserire attività velocemente dal telefono, usa direttamente l'app Google Sheets.</p>
+            <div class="section-heading"><p class="eyebrow">Regole per non rompere tutto</p><h2>Come editare</h2></div>
+            <ol class="steps-list"><li>Non rinominate i tab: <code>giorni</code>, <code>cose_da_fare</code>, <code>alloggi</code>, <code>costi</code>, <code>auto_documenti</code>, <code>prenotazioni</code>, <code>link_utili</code>, <code>note</code>.</li><li>Non cambiate i titoli della prima riga.</li><li>Aggiungete/modificate solo le righe sotto.</li><li>Non inserite dati sensibili o documenti personali completi.</li></ol>
           </article>
         </div>
       </section>
 
       <section id="backup" class="tab-panel">
         <div class="grid grid--two">
-          <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Backup</p>
-              <h2>Esporta dati</h2>
-            </div>
-            <p>Scarica una copia JSON o CSV. Se il backend Google Sheet è configurato, questo export include anche le aggiunte condivise.</p>
-            <div class="button-row">
-              <button class="btn btn--primary" id="exportJsonBtn">Scarica JSON</button>
-              <button class="btn btn--ghost" id="exportCsvBtn">Scarica CSV attività</button>
-            </div>
-          </article>
-          <article class="card">
-            <div class="section-heading">
-              <p class="eyebrow">Import locale</p>
-              <h2>Ripristina backup</h2>
-            </div>
-            <p class="muted">Importa un JSON salvato. Questa funzione aggiorna solo la copia locale del browser, non il Google Sheet.</p>
-            <input class="input" id="importFile" type="file" accept="application/json" />
-            <div class="button-row">
-              <button class="btn btn--ghost" id="resetLocalBtn">Reset dati locali</button>
-            </div>
-          </article>
+          <article class="card"><div class="section-heading"><p class="eyebrow">Backup</p><h2>Esporta dati</h2></div><p>Scarica una copia JSON o CSV delle cose da fare.</p><div class="button-row"><button class="btn btn--primary" id="exportJsonBtn">Scarica JSON</button><button class="btn btn--ghost" id="exportCsvBtn">Scarica CSV cose da fare</button></div></article>
+          <article class="card"><div class="section-heading"><p class="eyebrow">Stato dati</p><h2>Fonte attuale</h2></div><p id="backendStatus" class="muted">Caricamento…</p></article>
         </div>
-        <article class="card">
-          <div class="section-heading">
-            <p class="eyebrow">Connessione</p>
-            <h2>Stato backend</h2>
-          </div>
-          <div id="backendStatus" class="backend-status"></div>
-        </article>
       </section>
     </main>
   </div>
 
-  <template id="activityTemplate">
-    <article class="activity-card">
-      <div class="activity-card__time"></div>
-      <div class="activity-card__body">
-        <div class="activity-card__topline">
-          <span class="badge"></span>
-          <button class="icon-btn activity-delete" title="Elimina attività aggiunta">×</button>
-        </div>
-        <h4></h4>
-        <p class="activity-card__place"></p>
-        <p class="activity-card__notes"></p>
-        <div class="activity-card__meta"></div>
-      </div>
-    </article>
-  </template>
-
-  <iframe name="silentSubmitFrame" id="silentSubmitFrame" title="silent submit" hidden></iframe>
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+  <script src="config.js?v=20260628-v31"></script>
+  <script src="app.js?v=20260628-v31"></script>
 </body>
 </html>

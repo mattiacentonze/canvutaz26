@@ -1,5 +1,4 @@
-// Configurazione USA26 Roadtrip Planner.
-// Il sito è in sola lettura: il piano si modifica dal Google Sheet condiviso solo con voi tre.
+// Copia questo file come config.js e inserisci i tuoi link.
 window.USA26_CONFIG = {
   // URL della Web App Google Apps Script in sola lettura, es. https://script.google.com/macros/s/XXXX/exec
   APPS_SCRIPT_URL: 'https://script.google.com/macros/s/1ewrpTu6IhVrhPFkMxOe5cRiwVqHCOUo1FSmJpEdPlnpbKCTwtfOtPXxX/exec',

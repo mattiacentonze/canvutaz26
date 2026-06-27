@@ -1,130 +1,73 @@
 /**
- * USA26 Roadtrip Planner — Google Apps Script backend READ-ONLY
+ * USA26 Roadtrip Planner v3 - Google Apps Script SOLO LETTURA.
  *
- * Scopo della v2:
- * - il sito pubblico legge i dati dal Google Sheet;
- * - il sito pubblico NON può scrivere nel foglio;
- * - solo gli account Google condivisi come Editor possono modificare il foglio direttamente.
+ * Tab richiesti nel Google Sheet:
+ * giorni, cose_da_fare, alloggi, costi, auto_documenti, prenotazioni, link_utili, note
  *
- * Setup consigliato:
- * 1. Crea un Google Sheet vuoto.
- * 2. Extensions → Apps Script.
- * 3. Incolla questo file.
- * 4. Esegui setupSheets() e autorizza.
- * 5. Condividi il Google Sheet solo con i due amici come Editor.
- * 6. Deploy → New deployment → Web app.
- *    - Execute as: Me
- *    - Who has access: Anyone
- * 7. Copia l'URL /exec in config.js come APPS_SCRIPT_URL.
- *
- * Nota: la Web App è pubblica solo in lettura. Non esiste doPost.
+ * Le colonne sono volutamente semplici. Non servono ID, timestamp, core o orari.
  */
 
-const SPREADSHEET_ID = ''; // Lascia vuoto se lo script è collegato al Google Sheet.
-
-const COLLECTIONS = ['days', 'activities', 'lodging', 'costs', 'car', 'docs', 'notes', 'bookings'];
-
-const HEADERS = {
-  days: ['id', 'date', 'label', 'title', 'from', 'to', 'drive', 'driveHours', 'summary', 'lodging', 'warning', 'createdAt', 'updatedAt'],
-  activities: ['id', 'dayId', 'start', 'end', 'title', 'place', 'category', 'cost', 'notes', 'link', 'core', 'createdAt', 'updatedAt'],
-  lodging: ['id', 'dayId', 'title', 'city', 'address', 'amount', 'link', 'notes', 'core', 'createdAt', 'updatedAt'],
-  costs: ['id', 'category', 'item', 'title', 'scope', 'amount', 'split', 'notes', 'link', 'core', 'createdAt', 'updatedAt'],
-  car: ['id', 'title', 'value', 'notes', 'link', 'core', 'createdAt', 'updatedAt'],
-  docs: ['id', 'title', 'status', 'notes', 'link', 'core', 'createdAt', 'updatedAt'],
-  notes: ['id', 'dayId', 'title', 'notes', 'link', 'core', 'createdAt', 'updatedAt'],
-  bookings: ['id', 'dayId', 'title', 'amount', 'link', 'notes', 'core', 'createdAt', 'updatedAt']
+const SHEET_HEADERS = {
+  giorni: ['Data','Titolo giornata','Partenza','Arrivo','Guida stimata','Priorità del giorno','Da vedere','Google Maps','Note'],
+  cose_da_fare: ['Data','Luogo','Cosa fare','Categoria','Priorità','Costo stimato USD','Link utile','Note'],
+  alloggi: ['Data notte','Zona','Nome alloggio','Indirizzo','Link prenotazione','Costo stimato USD','Note'],
+  costi: ['Categoria','Voce','Costo stimato USD','Pagamento','Link utile','Note'],
+  auto_documenti: ['Categoria','Voce','Stato','Link utile','Note'],
+  prenotazioni: ['Cosa prenotare','Per quando','Priorità','Costo stimato USD','Link utile','Stato','Note'],
+  link_utili: ['Categoria','Nome','Link','Note'],
+  note: ['Tema','Nota','Link utile']
 };
 
-function setupSheets() {
-  const ss = getSpreadsheet_();
-  COLLECTIONS.forEach(collection => ensureSheet_(ss, collection));
-}
-
 function doGet(e) {
-  const params = e && e.parameter ? e.parameter : {};
-  const output = {
-    ok: true,
-    mode: 'read-only',
-    updatedAt: new Date().toISOString(),
-    data: readAll_()
-  };
-  return respond_(output, params.callback);
+  const data = getPlannerData_();
+  const payload = JSON.stringify({ ok: true, data });
+  const callback = e && e.parameter && e.parameter.callback;
+  if (callback) {
+    return ContentService.createTextOutput(`${callback}(${payload});`).setMimeType(ContentService.MimeType.JAVASCRIPT);
+  }
+  return ContentService.createTextOutput(payload).setMimeType(ContentService.MimeType.JSON);
 }
 
-function readAll_() {
-  const ss = getSpreadsheet_();
-  const data = {};
-  COLLECTIONS.forEach(collection => {
-    ensureSheet_(ss, collection);
-    data[collection] = readCollection_(ss, collection);
+function getPlannerData_() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const data = {
+    meta: {
+      'Titolo': 'USA26 Roadtrip Planner',
+      'Periodo': '4–12 luglio 2026',
+      'Persone': '3',
+      'Sintesi': 'San Francisco → Santa Barbara → Los Angeles → Las Vegas → Grand Canyon → Page / Antelope → Zion → Salt Lake City',
+      'Route Google Maps': 'https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA/Los+Angeles,+CA/Las+Vegas,+NV/Grand+Canyon+Village,+AZ/Page,+AZ/Zion+National+Park,+UT/Salt+Lake+City,+UT'
+    }
+  };
+  Object.keys(SHEET_HEADERS).forEach(name => {
+    const sheet = ss.getSheetByName(name);
+    data[name] = sheet ? readSheet_(sheet) : [];
   });
   return data;
 }
 
-function getSpreadsheet_() {
-  if (SPREADSHEET_ID) return SpreadsheetApp.openById(SPREADSHEET_ID);
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
-  if (!ss) throw new Error('No active spreadsheet. Bind this script to a Google Sheet or set SPREADSHEET_ID.');
-  return ss;
-}
-
-function ensureSheet_(ss, collection) {
-  if (COLLECTIONS.indexOf(collection) === -1) throw new Error('Invalid collection: ' + collection);
-  let sheet = ss.getSheetByName(collection);
-  if (!sheet) sheet = ss.insertSheet(collection);
-
-  const headers = HEADERS[collection];
-  const firstRow = sheet.getRange(1, 1, 1, headers.length).getValues()[0];
-  const isEmpty = firstRow.every(cell => cell === '');
-  if (isEmpty) {
-    sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
-    sheet.setFrozenRows(1);
-  } else {
-    const existing = firstRow.filter(Boolean).map(String);
-    const missing = headers.filter(header => existing.indexOf(header) === -1);
-    if (missing.length) {
-      sheet.getRange(1, existing.length + 1, 1, missing.length).setValues([missing]);
-    }
-  }
-  return sheet;
-}
-
-function readCollection_(ss, collection) {
-  const sheet = ensureSheet_(ss, collection);
-  const lastRow = sheet.getLastRow();
-  const lastCol = sheet.getLastColumn();
-  if (lastRow < 2) return [];
-
-  const values = sheet.getRange(1, 1, lastRow, lastCol).getValues();
-  const headers = values[0].map(String);
-  return values.slice(1).filter(row => row.some(cell => cell !== '')).map(row => {
-    const item = {};
-    headers.forEach((header, index) => {
-      if (!header) return;
-      const value = row[index];
-      item[header] = normalizeCell_(value);
+function readSheet_(sheet) {
+  const values = sheet.getDataRange().getDisplayValues();
+  if (values.length < 2) return [];
+  const headers = values[0].map(h => String(h || '').trim());
+  return values.slice(1)
+    .filter(row => row.some(cell => String(cell || '').trim() !== ''))
+    .map(row => {
+      const obj = {};
+      headers.forEach((h, i) => obj[h] = row[i] || '');
+      return obj;
     });
-    return item;
+}
+
+function setupSheets() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  Object.entries(SHEET_HEADERS).forEach(([name, headers]) => {
+    let sheet = ss.getSheetByName(name);
+    if (!sheet) sheet = ss.insertSheet(name);
+    sheet.clear();
+    sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
+    sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold').setBackground('#0f766e').setFontColor('#ffffff');
+    sheet.setFrozenRows(1);
+    sheet.autoResizeColumns(1, headers.length);
   });
-}
-
-function normalizeCell_(value) {
-  if (value instanceof Date) return value.toISOString();
-  if (value === 'TRUE') return true;
-  if (value === 'FALSE') return false;
-  if (value === 'true') return true;
-  if (value === 'false') return false;
-  return value;
-}
-
-function respond_(payload, callback) {
-  const json = JSON.stringify(payload);
-  if (callback) {
-    return ContentService
-      .createTextOutput(String(callback) + '(' + json + ');')
-      .setMimeType(ContentService.MimeType.JAVASCRIPT);
-  }
-  return ContentService
-    .createTextOutput(json)
-    .setMimeType(ContentService.MimeType.JSON);
 }

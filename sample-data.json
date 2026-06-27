@@ -1,27 +1,1260 @@
 {
   "meta": {
-    "tripName": "USA26 Roadtrip",
-    "travelers": 3,
-    "currency": "USD",
-    "startDate": "2026-07-04",
-    "endDate": "2026-07-12"
+    "Titolo": "USA26 Roadtrip Planner",
+    "Versione": "v3.1 - Sheet semplificato + consigli guida collega filtrati",
+    "Periodo": "4–12 luglio 2026",
+    "Persone": "3",
+    "Sintesi": "San Francisco → Santa Barbara → Los Angeles → Las Vegas → Grand Canyon → Page / Antelope → Zion → Salt Lake City",
+    "Route Google Maps": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA/Los+Angeles,+CA/Las+Vegas,+NV/Grand+Canyon+Village,+AZ/Page,+AZ/Zion+National+Park,+UT/Salt+Lake+City,+UT",
+    "Google Sheet": ""
   },
-  "days": [
-    { "id": "d04", "date": "2026-07-04", "label": "Sab 4 lug", "title": "San Francisco", "from": "San Francisco", "to": "San Francisco", "drive": "0h" },
-    { "id": "d05", "date": "2026-07-05", "label": "Dom 5 lug", "title": "San Francisco", "from": "San Francisco", "to": "San Francisco", "drive": "0h" },
-    { "id": "d06", "date": "2026-07-06", "label": "Lun 6 lug", "title": "San Francisco → Santa Barbara", "from": "San Francisco", "to": "Santa Barbara", "drive": "5h45–6h45" },
-    { "id": "d07", "date": "2026-07-07", "label": "Mar 7 lug", "title": "Santa Barbara → Los Angeles", "from": "Santa Barbara", "to": "Los Angeles", "drive": "1h45–2h30" },
-    { "id": "d08", "date": "2026-07-08", "label": "Mer 8 lug", "title": "Los Angeles → Las Vegas", "from": "Los Angeles", "to": "Las Vegas", "drive": "4h30–5h30" },
-    { "id": "d09", "date": "2026-07-09", "label": "Gio 9 lug", "title": "Las Vegas → Grand Canyon South Rim", "from": "Las Vegas", "to": "Grand Canyon South Rim", "drive": "4h30–5h" },
-    { "id": "d10", "date": "2026-07-10", "label": "Ven 10 lug", "title": "Grand Canyon → Page / Antelope", "from": "Grand Canyon South Rim", "to": "Page", "drive": "2h30–3h30" },
-    { "id": "d11", "date": "2026-07-11", "label": "Sab 11 lug", "title": "Page → Zion", "from": "Page", "to": "Zion", "drive": "2h15–3h" },
-    { "id": "d12", "date": "2026-07-12", "label": "Dom 12 lug", "title": "Zion → Salt Lake City", "from": "Zion", "to": "Salt Lake City", "drive": "4h30–5h" }
+  "giorni": [
+    {
+      "Data": "2026-07-04",
+      "Titolo giornata": "San Francisco - primo giro città",
+      "Partenza": "San Francisco",
+      "Arrivo": "San Francisco",
+      "Guida stimata": "0h",
+      "Priorità del giorno": "Golden Gate + Marina/Palace of Fine Arts + Fisherman’s Wharf/Pier 39",
+      "Da vedere": "Golden Gate Bridge/viewpoint, Palace of Fine Arts, Marina District, Ghirardelli Square, Fisherman’s Wharf, Pier 39, Lombard Street se resta tempo",
+      "Google Maps": "https://www.google.com/maps/search/Golden+Gate+Bridge+Palace+of+Fine+Arts+Ghirardelli+Square+Pier+39+Lombard+Street+San+Francisco",
+      "Note": "Tenere la giornata flessibile. Evitare Tenderloin, soprattutto la zona dietro Union Square. Cable car opzionale se la coda è gestibile."
+    },
+    {
+      "Data": "2026-07-05",
+      "Titolo giornata": "San Francisco - Alcatraz + quartieri",
+      "Partenza": "San Francisco",
+      "Arrivo": "San Francisco",
+      "Guida stimata": "0h",
+      "Priorità del giorno": "Alcatraz se prenotata + Ferry Building/Embarcadero + Mission/Painted Ladies",
+      "Da vedere": "Alcatraz, Ferry Building, Embarcadero, Chinatown, Coit Tower, Mission murals, Painted Ladies, Haight-Ashbury, Golden Gate Park/Twin Peaks come extra",
+      "Google Maps": "https://www.google.com/maps/search/Alcatraz+Ferry+Building+Coit+Tower+Mission+District+Painted+Ladies+Haight+Ashbury+San+Francisco",
+      "Note": "Alcatraz merita secondo la guida della collega. Non caricare tutto: scegliete 2 zone e lasciate il resto opzionale."
+    },
+    {
+      "Data": "2026-07-06",
+      "Titolo giornata": "San Francisco → Santa Barbara",
+      "Partenza": "San Francisco",
+      "Arrivo": "Santa Barbara",
+      "Guida stimata": "6h / 6h30 senza soste lunghe",
+      "Priorità del giorno": "Trasferimento verso sud con 1-2 soste massimo",
+      "Da vedere": "US-101, Monterey/Carmel solo se partenza presto, San Luis Obispo, Pismo Beach, Santa Barbara waterfront",
+      "Google Maps": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA",
+      "Note": "Guidare con la luce: paesaggio bello e giornate lunghe. Big Sur/costa completa rischia di allungare troppo. Stanford esclusa: non imperdibile e toglierebbe tempo a SF."
+    },
+    {
+      "Data": "2026-07-07",
+      "Titolo giornata": "Santa Barbara → Los Angeles",
+      "Partenza": "Santa Barbara",
+      "Arrivo": "Los Angeles",
+      "Guida stimata": "2h / 3h + traffico LA",
+      "Priorità del giorno": "Santa Barbara breve + LA classica senza correre troppo",
+      "Da vedere": "Santa Barbara Courthouse/Stearns Wharf, Beverly Hills/Rodeo Drive, Hollywood Walk of Fame quick stop, Griffith Observatory, Santa Monica/Venice se logistica ok",
+      "Google Maps": "https://www.google.com/maps/dir/Santa+Barbara,+CA/Beverly+Hills,+CA/Hollywood,+Los+Angeles,+CA/Griffith+Observatory,+Los+Angeles,+CA/Santa+Monica,+CA",
+      "Note": "LA è compressa. Evitare Downtown se siete stanchi; evitare Skid Row. Usare BestParking per parcheggi. Venice/Santa Monica meglio prima del buio."
+    },
+    {
+      "Data": "2026-07-08",
+      "Titolo giornata": "Los Angeles → Las Vegas",
+      "Partenza": "Los Angeles",
+      "Arrivo": "Las Vegas",
+      "Guida stimata": "4h30 / 5h30 + traffico",
+      "Priorità del giorno": "Arrivare a Las Vegas e fare serata Strip/Fremont",
+      "Da vedere": "Las Vegas Sign, Bellagio fountains/Conservatory, Venetian, Wynn, Sphere da fuori, Fremont Street/Viva Vision",
+      "Google Maps": "https://www.google.com/maps/dir/Los+Angeles,+CA/Las+Vegas,+NV",
+      "Note": "Percorso diretto verso Las Vegas: non inserire deviazioni lunghe. Scegliere massimo 3-4 cose in serata."
+    },
+    {
+      "Data": "2026-07-09",
+      "Titolo giornata": "Las Vegas → Grand Canyon South Rim",
+      "Partenza": "Las Vegas",
+      "Arrivo": "Grand Canyon South Rim / Tusayan",
+      "Guida stimata": "4h30 / 5h senza soste lunghe",
+      "Priorità del giorno": "South Rim + viewpoint sparsi, non un solo punto",
+      "Da vedere": "Hoover Dam opzionale, Route 66/Hackberry/Seligman opzionali, Mather Point, Yavapai, Powell/Hopi/Mohave Point, Desert View Drive se tempo",
+      "Google Maps": "https://www.google.com/maps/dir/Las+Vegas,+NV/Grand+Canyon+Village,+AZ",
+      "Note": "Dormire il più vicino possibile al canyon, non troppo lontano tipo Flagstaff se possibile. Se c’è nebbia al mattino/pomeriggio, provare più viewpoint."
+    },
+    {
+      "Data": "2026-07-10",
+      "Titolo giornata": "Grand Canyon → Page / Antelope Canyon",
+      "Partenza": "Grand Canyon South Rim",
+      "Arrivo": "Page",
+      "Guida stimata": "2h30 / 3h via Desert View",
+      "Priorità del giorno": "Desert View Drive + Horseshoe Bend + Antelope Canyon prenotato",
+      "Da vedere": "Desert View Watchtower, Horseshoe Bend, Lower/Upper Antelope Canyon, Lake Powell/Glen Canyon Dam viewpoint se avanza tempo",
+      "Google Maps": "https://www.google.com/maps/dir/Grand+Canyon+Village,+AZ/Page,+AZ/Horseshoe+Bend,+Page,+AZ/Antelope+Canyon,+AZ",
+      "Note": "Horseshoe Bend è must secondo la guida, ma breve. Antelope va prenotato e bisogna arrivare prima dell’orario tour. Evitare deviazioni extra dopo Antelope."
+    },
+    {
+      "Data": "2026-07-11",
+      "Titolo giornata": "Page → Zion",
+      "Partenza": "Page",
+      "Arrivo": "Zion / Springdale / Hurricane",
+      "Guida stimata": "2h15 / 3h + visita Zion",
+      "Priorità del giorno": "Canyon Overlook + shuttle Zion Canyon se riuscite",
+      "Da vedere": "Kanab breve stop opzionale, Zion-Mt. Carmel Highway, Canyon Overlook Trail, Zion shuttle, Temple of Sinawava, Riverside Walk, Zion Canyon Brew Pub",
+      "Google Maps": "https://www.google.com/maps/dir/Page,+AZ/Zion+National+Park,+UT/Springdale,+UT",
+      "Note": "Canyon Overlook è la mini-hike da fare assolutamente secondo la guida. Zion può essere affollato: parcheggiare e usare shuttle. Kanab solo come stop breve."
+    },
+    {
+      "Data": "2026-07-12",
+      "Titolo giornata": "Zion → Salt Lake City",
+      "Partenza": "Zion / Springdale / Hurricane",
+      "Arrivo": "Salt Lake City",
+      "Guida stimata": "4h30 / 5h",
+      "Priorità del giorno": "Trasferimento finale verso SLC",
+      "Da vedere": "Ultimo viewpoint a Zion se dormite vicini, Cedar City/St. George solo come stop logistici, arrivo a Salt Lake City",
+      "Google Maps": "https://www.google.com/maps/dir/Zion+National+Park,+UT/Salt+Lake+City,+UT",
+      "Note": "Niente deviazioni lunghe: la priorità è arrivare a SLC."
+    }
   ],
-  "costs": [
-    { "id": "c01", "category": "Parchi", "item": "America the Beautiful Non-Resident Annual Pass", "scope": "Gruppo / veicolo", "amount": 250 },
-    { "id": "c02", "category": "San Francisco", "item": "Alcatraz Day Tour", "scope": "A persona", "amount": 47.95 },
-    { "id": "c03", "category": "Page", "item": "Lower Antelope Canyon", "scope": "A persona", "amount": 80.50 },
-    { "id": "c04", "category": "Page", "item": "Navajo entry fee Antelope", "scope": "A persona", "amount": 15 },
-    { "id": "c05", "category": "Page", "item": "Horseshoe Bend parking", "scope": "Per auto", "amount": 10 }
+  "cose_da_fare": [
+    {
+      "Data": "2026-07-04",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Golden Gate Bridge / viewpoint",
+      "Categoria": "Vista",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.goldengate.org/bridge/visiting-the-bridge/",
+      "Note": "Viewpoint o tramonto se meteo ok. Possibile anche lato opposto ponte se avete auto."
+    },
+    {
+      "Data": "2026-07-04",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Palace of Fine Arts + Marina District",
+      "Categoria": "Vista",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0",
+      "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Palace-of-Fine-Arts-69",
+      "Note": "Comodo nello stesso cluster del Golden Gate."
+    },
+    {
+      "Data": "2026-07-04",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Ghirardelli Square + Fisherman’s Wharf + Pier 39",
+      "Categoria": "Passeggiata",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.pier39.com/",
+      "Note": "Cluster turistico ma comodo; fare senza dedicarci mezza giornata."
+    },
+    {
+      "Data": "2026-07-04",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Lombard Street",
+      "Categoria": "Vista",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.sftravel.com/things-to-do/attractions/iconic-sf/lombard-street",
+      "Note": "Da fare se passa lungo il percorso, non come priorità assoluta."
+    },
+    {
+      "Data": "2026-07-04",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Cable car",
+      "Categoria": "Esperienza",
+      "Priorità": "Media",
+      "Costo stimato USD": "8 a corsa circa",
+      "Link utile": "https://www.sfmta.com/getting-around/muni/cable-cars",
+      "Note": "Coda variabile. Utile se volete fare esperienza classica senza usare troppo l’auto."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Alcatraz Day Tour",
+      "Categoria": "Biglietto",
+      "Priorità": "Alta",
+      "Costo stimato USD": "47.95 a persona circa",
+      "Link utile": "https://www.cityexperiences.com/san-francisco/city-cruises/alcatraz/tour-options/",
+      "Note": "Prenotare prima; nella guida è indicato come esperienza che merita."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Ferry Building + Embarcadero",
+      "Categoria": "Passeggiata",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.ferrybuildingmarketplace.com/",
+      "Note": "Comodo prima/dopo zona Pier/Alcatraz."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Chinatown + North Beach",
+      "Categoria": "Quartiere",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.sftravel.com/things-to-do/attractions/neighborhoods/chinatown",
+      "Note": "Da collegare con Coit Tower/Ferry Building se logisticamente comodo."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Coit Tower",
+      "Categoria": "Vista",
+      "Priorità": "Media",
+      "Costo stimato USD": "10-15 circa",
+      "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Coit-Tower-290",
+      "Note": "Vista bella; salire solo se avete tempo e meteo pulito."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Mission murals: Women’s Building + Clarion Alley",
+      "Categoria": "Quartiere",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://clarionalleymuralproject.org/",
+      "Note": "Street art; meglio di giorno."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Painted Ladies / Alamo Square",
+      "Categoria": "Vista",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Alamo-Square-151",
+      "Note": "Stop rapido, buono se passate da Mission/Haight."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Haight-Ashbury + Golden Gate Park",
+      "Categoria": "Quartiere/parco",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://sfrecpark.org/770/Golden-Gate-Park",
+      "Note": "Scegliere solo una parte del parco: è grande."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "De Young Museum / Hamon Observation Tower",
+      "Categoria": "Museo/vista",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "20-25 circa",
+      "Link utile": "https://www.famsf.org/visit/de-young",
+      "Note": "La guida segnala che il ticket può includere anche Legion of Honor lo stesso giorno. Controllare prezzi/aperture."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "SFMOMA",
+      "Categoria": "Museo",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "30 circa",
+      "Link utile": "https://www.sfmoma.org/visit/",
+      "Note": "Opzionale solo se meteo brutto o interesse musei."
+    },
+    {
+      "Data": "2026-07-05",
+      "Luogo": "San Francisco",
+      "Cosa fare": "Twin Peaks",
+      "Categoria": "Vista",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0",
+      "Link utile": "https://sfrecpark.org/Facilities/Facility/Details/Twin-Peaks-384",
+      "Note": "Extra se c’è visibilità e avete auto."
+    },
+    {
+      "Data": "2026-07-06",
+      "Luogo": "San Francisco → Santa Barbara",
+      "Cosa fare": "Guidare con luce + massimo 1-2 soste",
+      "Categoria": "Trasferimento",
+      "Priorità": "Alta",
+      "Costo stimato USD": "benzina/parcheggi",
+      "Link utile": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA",
+      "Note": "Consiglio guida: paesaggio bello, meglio evitare di arrivare troppo tardi."
+    },
+    {
+      "Data": "2026-07-06",
+      "Luogo": "Monterey / Carmel",
+      "Cosa fare": "Sosta Monterey/Carmel",
+      "Categoria": "Sosta opzionale",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.google.com/maps/search/Monterey+Carmel+California",
+      "Note": "Solo se partenza presto; altrimenti tirate verso Santa Barbara."
+    },
+    {
+      "Data": "2026-07-06",
+      "Luogo": "San Luis Obispo / Pismo Beach",
+      "Cosa fare": "Sosta San Luis Obispo o Pismo Beach",
+      "Categoria": "Sosta opzionale",
+      "Priorità": "Media",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.google.com/maps/search/San+Luis+Obispo+Pismo+Beach",
+      "Note": "Più compatibile con US-101 rispetto alla costa lenta."
+    },
+    {
+      "Data": "2026-07-06",
+      "Luogo": "Santa Barbara",
+      "Cosa fare": "Waterfront / Stearns Wharf",
+      "Categoria": "Passeggiata",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://stearnswharf.org/",
+      "Note": "Da fare la sera se arrivate non troppo tardi."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Santa Barbara",
+      "Cosa fare": "Santa Barbara Courthouse / Stearns Wharf breve",
+      "Categoria": "Vista",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://santabarbaraca.gov/government/departments/parks-recreation/parks/parks-recreation-facilities/courthouse-gardens",
+      "Note": "Fare breve prima di scendere verso LA."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "Warner Bros Studio Tour",
+      "Categoria": "Biglietto",
+      "Priorità": "Media",
+      "Costo stimato USD": "70-80 circa",
+      "Link utile": "https://www.wbstudiotour.com/",
+      "Note": "La guida lo consiglia molto: set veri/ricostruiti e dietro le quinte. Inserirlo solo se accettate di sacrificare altro a LA."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "Beverly Hills + Rodeo Drive + Beverly Gardens Park",
+      "Categoria": "Passeggiata",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://lovebeverlyhills.com/things-to-do/view/beverly-gardens-park",
+      "Note": "Stop classico e compatibile con il giro verso Hollywood/Griffith."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "Hollywood Walk of Fame",
+      "Categoria": "Stop rapido",
+      "Priorità": "Media",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.walkoffame.com/",
+      "Note": "La guida dice quick stop: non perderci troppo tempo."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "Griffith Observatory + vista Hollywood sign",
+      "Categoria": "Vista",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://griffithobservatory.org/",
+      "Note": "Molto consigliato dalla guida. Parcheggio difficile vicino al tramonto; controllare chiusure/aperture."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "Santa Monica Pier + Venice Beach",
+      "Categoria": "Passeggiata",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0+ parcheggio",
+      "Link utile": "https://www.santamonica.com/places-to-go/santa-monica-pier/",
+      "Note": "Parcheggio spesso circa 20$/giorno; la guida consiglia di evitare dopo il tramonto."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "Venice Canals + Venice Sign + Abbot Kinney",
+      "Categoria": "Quartiere",
+      "Priorità": "Media",
+      "Costo stimato USD": "0+ parcheggio",
+      "Link utile": "https://www.visitcalifornia.com/experience/venice-canals/",
+      "Note": "Da fare con Santa Monica/Venice, meglio spostare l’auto se necessario."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "Downtown LA mini-giro: Union Station, Olvera Street, City Hall, Grand Central Market, Bradbury",
+      "Categoria": "Quartiere",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.discoverlosangeles.com/things-to-do/los-angeles-union-station",
+      "Note": "Solo se avete energie. Evitare Skid Row. City Hall/edifici: controllare aperture."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "The Grove + LACMA Urban Light",
+      "Categoria": "Extra serale",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+ parcheggio",
+      "Link utile": "https://www.lacma.org/urban-light",
+      "Note": "Opzionale; Urban Light meglio la sera, ma non caricare troppo la giornata."
+    },
+    {
+      "Data": "2026-07-07",
+      "Luogo": "Los Angeles",
+      "Cosa fare": "BestParking per parcheggi LA",
+      "Categoria": "Tool",
+      "Priorità": "Alta",
+      "Costo stimato USD": "variabile",
+      "Link utile": "https://www.bestparking.com/",
+      "Note": "Utile per Santa Monica/Venice, Hollywood, Downtown."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Las Vegas Sign",
+      "Categoria": "Foto",
+      "Priorità": "Media",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.lasvegasnevada.gov/Residents/Parking-Transportation/Welcome-to-Las-Vegas-Sign",
+      "Note": "Stop rapido entrando o uscendo, se comodo."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Bellagio fountains + Conservatory",
+      "Categoria": "Gratis",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0",
+      "Link utile": "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html",
+      "Note": "Classico; fontane e giardino interno gratis."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Venetian Resort / canali interni",
+      "Categoria": "Gratis",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.venetianlasvegas.com/",
+      "Note": "La guida lo consiglia perché architettonicamente scenico."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Wynn / Lake of Dreams",
+      "Categoria": "Gratis",
+      "Priorità": "Media",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.wynnlasvegas.com/entertainment/lake-of-dreams",
+      "Note": "Show serale gratuito/da verificare; opzionale se siete sulla Strip."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Sphere da fuori o evento",
+      "Categoria": "Vista/biglietto",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0 da fuori / ticket variabile",
+      "Link utile": "https://www.thesphere.com/shows",
+      "Note": "Da fuori gratis. Dentro solo con ticket evento/film."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Fremont Street + Viva Vision",
+      "Categoria": "Gratis",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://vegasexperience.com/",
+      "Note": "La guida dice diversa dalla Strip e pedonale. Viva Vision ogni sera."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Downtown Container Park",
+      "Categoria": "Gratis",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://downtowncontainerpark.com/",
+      "Note": "Opzionale se fate Fremont."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "The Neon Museum",
+      "Categoria": "Biglietto",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "20-30 circa",
+      "Link utile": "https://www.neonmuseum.org/",
+      "Note": "Interessante ma da prenotare/valutare solo se avete tempo."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Pawn Stars Gold & Silver Pawn Shop",
+      "Categoria": "Extra",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://gspawn.com/",
+      "Note": "Solo se siete fan; nella guida era stato fatto per interesse personale."
+    },
+    {
+      "Data": "2026-07-08",
+      "Luogo": "Las Vegas",
+      "Cosa fare": "Akhob by James Turrell",
+      "Categoria": "Arte",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0 ma prenotazione obbligatoria",
+      "Link utile": "https://www.louisvuitton.com/eng-us/stories/akhob",
+      "Note": "Opzionale; gratuito ma prenotazione spesso necessaria."
+    },
+    {
+      "Data": "2026-07-09",
+      "Luogo": "Las Vegas → Grand Canyon",
+      "Cosa fare": "Hoover Dam stop",
+      "Categoria": "Sosta opzionale",
+      "Priorità": "Media",
+      "Costo stimato USD": "parcheggio/tour variabile",
+      "Link utile": "https://www.usbr.gov/lc/hooverdam/",
+      "Note": "Compatibile con il trasferimento se partite presto."
+    },
+    {
+      "Data": "2026-07-09",
+      "Luogo": "Route 66",
+      "Cosa fare": "Hackberry General Store / Seligman",
+      "Categoria": "Sosta opzionale",
+      "Priorità": "Media",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.google.com/maps/search/Hackberry+General+Store+Seligman+Route+66",
+      "Note": "La guida segnala che Seligman/Hackberry sono stop tipici Route 66; non esagerare con le soste."
+    },
+    {
+      "Data": "2026-07-09",
+      "Luogo": "Route 66 / Oatman",
+      "Cosa fare": "Oatman ghost town",
+      "Categoria": "Sosta opzionale",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.google.com/maps/search/Oatman+Arizona",
+      "Note": "Leggero detour: inserirla solo se partite molto presto. Panorama bello secondo guida, città non imperdibile."
+    },
+    {
+      "Data": "2026-07-09",
+      "Luogo": "Grand Canyon South Rim",
+      "Cosa fare": "Mather Point / Yavapai Point",
+      "Categoria": "Viewpoint",
+      "Priorità": "Alta",
+      "Costo stimato USD": "coperto dal pass",
+      "Link utile": "https://www.nps.gov/grca/planyourvisit/south-rim.htm",
+      "Note": "Punti comodi vicino Visitor Center."
+    },
+    {
+      "Data": "2026-07-09",
+      "Luogo": "Grand Canyon South Rim",
+      "Cosa fare": "Powell Point → Hopi Point → Mohave Point",
+      "Categoria": "Passeggiata/viewpoint",
+      "Priorità": "Alta",
+      "Costo stimato USD": "coperto dal pass",
+      "Link utile": "https://www.nps.gov/grca/planyourvisit/shuttle-buses.htm",
+      "Note": "La guida lo consiglia; controllare shuttle perché andata/ritorno non fermano sempre uguale."
+    },
+    {
+      "Data": "2026-07-09",
+      "Luogo": "Grand Canyon South Rim",
+      "Cosa fare": "Desert View Drive / Desert View Watchtower",
+      "Categoria": "Viewpoint",
+      "Priorità": "Alta",
+      "Costo stimato USD": "coperto dal pass",
+      "Link utile": "https://www.nps.gov/grca/planyourvisit/desert-view.htm",
+      "Note": "Da fare anche il giorno dopo uscendo verso Page."
+    },
+    {
+      "Data": "2026-07-10",
+      "Luogo": "Grand Canyon → Page",
+      "Cosa fare": "Uscita da Desert View Drive verso Page",
+      "Categoria": "Trasferimento panoramico",
+      "Priorità": "Alta",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.google.com/maps/dir/Grand+Canyon+Village,+AZ/Page,+AZ",
+      "Note": "Non fissarsi su un solo viewpoint: se meteo/nebbia cambia, provarne più di uno."
+    },
+    {
+      "Data": "2026-07-10",
+      "Luogo": "Page",
+      "Cosa fare": "Horseshoe Bend",
+      "Categoria": "Vista",
+      "Priorità": "Alta",
+      "Costo stimato USD": "10 auto circa",
+      "Link utile": "https://cityofpage.org/official-horseshoe-bend-information",
+      "Note": "Must secondo guida; breve ma molto bello. Camminata dal parcheggio."
+    },
+    {
+      "Data": "2026-07-10",
+      "Luogo": "Page",
+      "Cosa fare": "Lower Antelope Canyon",
+      "Categoria": "Biglietto",
+      "Priorità": "Alta",
+      "Costo stimato USD": "80-100+ a persona circa",
+      "Link utile": "https://www.antelopelowercanyon.com/",
+      "Note": "La guida ha fatto Lower e lo definisce stupendo. Prenotare slot e arrivare prima."
+    },
+    {
+      "Data": "2026-07-10",
+      "Luogo": "Page",
+      "Cosa fare": "Upper Antelope Canyon",
+      "Categoria": "Biglietto",
+      "Priorità": "Media",
+      "Costo stimato USD": "100-120+ a persona circa",
+      "Link utile": "https://navajotours.com/",
+      "Note": "Alternativa più famosa/cara. Valutare in base a slot/prezzo."
+    },
+    {
+      "Data": "2026-07-10",
+      "Luogo": "Page",
+      "Cosa fare": "Glen Canyon Dam / Lake Powell viewpoint",
+      "Categoria": "Vista",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.nps.gov/glca/planyourvisit/placestogo.htm",
+      "Note": "Extra breve se avete tempo prima/dopo Antelope."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Kanab",
+      "Cosa fare": "Kanab breve stop / pranzo",
+      "Categoria": "Sosta opzionale",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.google.com/maps/search/Kanab+Utah+restaurants",
+      "Note": "Kanab è sulla direttrice verso Zion; non caricarlo troppo."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Kanab",
+      "Cosa fare": "Little Hollywood Kanab",
+      "Categoria": "Sosta opzionale",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0+",
+      "Link utile": "https://www.littlehollywoodmuseum.org/",
+      "Note": "Solo se vi serve pausa; western set gratuito/rapido."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Kanab",
+      "Cosa fare": "Sand Caves Kanab / Dinosaur Tracks",
+      "Categoria": "Mini-deviazione",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0",
+      "Link utile": "https://www.google.com/maps/search/Sand+Caves+Kanab+Dinosaur+Tracks",
+      "Note": "Fattibile ma rischia di togliere tempo a Zion; scarpe adatte, evitare caldo forte."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Zion",
+      "Cosa fare": "Zion-Mt. Carmel Highway",
+      "Categoria": "Strada panoramica",
+      "Priorità": "Alta",
+      "Costo stimato USD": "coperto dal pass",
+      "Link utile": "https://www.nps.gov/zion/planyourvisit/the-zion-mount-carmel-tunnel.htm",
+      "Note": "Arrivando da Page/Kanab è la strada scenica naturale."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Zion",
+      "Cosa fare": "Canyon Overlook Trail",
+      "Categoria": "Mini-hike",
+      "Priorità": "Alta",
+      "Costo stimato USD": "coperto dal pass",
+      "Link utile": "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm",
+      "Note": "Da fare assolutamente secondo guida; breve ma attenzione caldo/parcheggio."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Zion",
+      "Cosa fare": "Shuttle Zion Canyon fino a Temple of Sinawava",
+      "Categoria": "Parco/shuttle",
+      "Priorità": "Alta",
+      "Costo stimato USD": "coperto dal pass",
+      "Link utile": "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm",
+      "Note": "Dopo Canyon Overlook bisogna parcheggiare e usare shuttle per lo Zion Canyon."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Zion",
+      "Cosa fare": "Riverside Walk",
+      "Categoria": "Passeggiata",
+      "Priorità": "Alta",
+      "Costo stimato USD": "coperto dal pass",
+      "Link utile": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm",
+      "Note": "Facile e scenico; dopo inizia The Narrows, da fare solo se preparati."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Springdale/Zion",
+      "Cosa fare": "Zion Canyon Brew Pub",
+      "Categoria": "Food",
+      "Priorità": "Media",
+      "Costo stimato USD": "variabile",
+      "Link utile": "https://www.zionbrewery.com/",
+      "Note": "Food/beverage consigliato nella guida come stop vicino Zion."
+    },
+    {
+      "Data": "2026-07-11",
+      "Luogo": "Springdale/Zion",
+      "Cosa fare": "The Cave Café",
+      "Categoria": "Food",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "variabile",
+      "Link utile": "https://www.google.com/maps/search/The+Cave+Cafe+Zion",
+      "Note": "Opzione colazione/chai se comodo, controllare apertura."
+    },
+    {
+      "Data": "2026-07-12",
+      "Luogo": "Zion → Salt Lake City",
+      "Cosa fare": "Partenza verso Salt Lake City senza deviazioni lunghe",
+      "Categoria": "Trasferimento",
+      "Priorità": "Alta",
+      "Costo stimato USD": "benzina",
+      "Link utile": "https://www.google.com/maps/dir/Zion+National+Park,+UT/Salt+Lake+City,+UT",
+      "Note": "Niente deviazioni lunghe: arrivo a SLC come priorità."
+    }
+  ],
+  "alloggi": [
+    {
+      "Data notte": "2026-07-04",
+      "Zona": "San Francisco",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Notte 4→5 luglio."
+    },
+    {
+      "Data notte": "2026-07-05",
+      "Zona": "San Francisco",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Notte 5→6 luglio."
+    },
+    {
+      "Data notte": "2026-07-06",
+      "Zona": "Santa Barbara",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Notte 6→7 luglio."
+    },
+    {
+      "Data notte": "2026-07-07",
+      "Zona": "Los Angeles",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Notte 7→8 luglio."
+    },
+    {
+      "Data notte": "2026-07-08",
+      "Zona": "Las Vegas",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Notte 8→9 luglio."
+    },
+    {
+      "Data notte": "2026-07-09",
+      "Zona": "Grand Canyon South Rim / Tusayan",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Meglio vicino al canyon; evitare Flagstaff se possibile perché allunga la sveglia."
+    },
+    {
+      "Data notte": "2026-07-10",
+      "Zona": "Page",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Base corretta per Horseshoe Bend e Antelope Canyon."
+    },
+    {
+      "Data notte": "2026-07-11",
+      "Zona": "Springdale / Hurricane / La Verkin",
+      "Nome alloggio": "Da inserire",
+      "Indirizzo": "Da inserire",
+      "Link prenotazione": "",
+      "Costo stimato USD": "",
+      "Note": "Springdale più comoda; Hurricane/La Verkin più economiche."
+    }
+  ],
+  "costi": [
+    {
+      "Categoria": "Parchi",
+      "Voce": "America the Beautiful Non-Resident Annual Pass",
+      "Costo stimato USD": "250 gruppo",
+      "Pagamento": "Una volta sola",
+      "Link utile": "https://www.nps.gov/planyourvisit/passes.htm",
+      "Note": "Per 3 italiani conviene rispetto a pagare Grand Canyon + Zion separati."
+    },
+    {
+      "Categoria": "Parchi",
+      "Voce": "Grand Canyon South Rim",
+      "Costo stimato USD": "Coperto dal pass",
+      "Pagamento": "Pass",
+      "Link utile": "https://www.nps.gov/grca/planyourvisit/fees.htm",
+      "Note": "Se non avete pass, controllare fee/surcharge non residenti."
+    },
+    {
+      "Categoria": "Parchi",
+      "Voce": "Zion National Park",
+      "Costo stimato USD": "Coperto dal pass",
+      "Pagamento": "Pass",
+      "Link utile": "https://www.nps.gov/zion/planyourvisit/fees.htm",
+      "Note": "Shuttle incluso/gestione parco secondo stagione."
+    },
+    {
+      "Categoria": "Page",
+      "Voce": "Horseshoe Bend parking",
+      "Costo stimato USD": "10 auto circa",
+      "Pagamento": "Carta/contanti secondo regole locali",
+      "Link utile": "https://cityofpage.org/official-horseshoe-bend-information",
+      "Note": "Non coperto dal pass NPS."
+    },
+    {
+      "Categoria": "Page",
+      "Voce": "Lower/Upper Antelope Canyon",
+      "Costo stimato USD": "80-120+ a persona",
+      "Pagamento": "Online",
+      "Link utile": "https://navajonationparks.org/guided-tour-operators/antelope-canyon-tour-operators/",
+      "Note": "Tour guidato obbligatorio, prenotare prima."
+    },
+    {
+      "Categoria": "San Francisco",
+      "Voce": "Alcatraz Day Tour",
+      "Costo stimato USD": "47.95 a persona circa",
+      "Pagamento": "Online",
+      "Link utile": "https://www.cityexperiences.com/san-francisco/city-cruises/alcatraz/tour-options/",
+      "Note": "Prenotare presto."
+    },
+    {
+      "Categoria": "Los Angeles",
+      "Voce": "Warner Bros Studio Tour",
+      "Costo stimato USD": "70-80 circa",
+      "Pagamento": "Online",
+      "Link utile": "https://www.wbstudiotour.com/",
+      "Note": "Opzionale ma consigliato dalla guida."
+    },
+    {
+      "Categoria": "Los Angeles",
+      "Voce": "Parcheggi LA",
+      "Costo stimato USD": "20+ al giorno possibile",
+      "Pagamento": "Carta/app",
+      "Link utile": "https://www.bestparking.com/",
+      "Note": "Da usare per Santa Monica/Venice/Hollywood/Downtown."
+    },
+    {
+      "Categoria": "Las Vegas",
+      "Voce": "Sphere",
+      "Costo stimato USD": "0 fuori / ticket variabile",
+      "Pagamento": "Online",
+      "Link utile": "https://www.thesphere.com/shows",
+      "Note": "Da fuori gratis; evento/film a pagamento."
+    },
+    {
+      "Categoria": "Las Vegas",
+      "Voce": "Neon Museum",
+      "Costo stimato USD": "20-30 circa",
+      "Pagamento": "Online",
+      "Link utile": "https://www.neonmuseum.org/",
+      "Note": "Opzionale."
+    },
+    {
+      "Categoria": "Trasporti",
+      "Voce": "Benzina roadtrip",
+      "Costo stimato USD": "Da calcolare",
+      "Pagamento": "Carta",
+      "Link utile": "https://www.gasbuddy.com/",
+      "Note": "Stimare dopo scelta auto."
+    },
+    {
+      "Categoria": "Varie",
+      "Voce": "Mance / parcheggi / acqua",
+      "Costo stimato USD": "Buffer",
+      "Pagamento": "Carta/cash",
+      "Link utile": "",
+      "Note": "Tenere buffer per caldo, acqua, parcheggi e snack."
+    }
+  ],
+  "auto_documenti": [
+    {
+      "Categoria": "Auto",
+      "Voce": "Noleggio auto",
+      "Stato": "Da definire",
+      "Link utile": "",
+      "Note": "Pickup San Francisco, drop-off Salt Lake City. Verificare one-way fee e guidatori aggiuntivi."
+    },
+    {
+      "Categoria": "Auto",
+      "Voce": "Assicurazione CDW/LDW",
+      "Stato": "Da verificare",
+      "Link utile": "",
+      "Note": "Controllare cosa copre carta/assicurazione e cosa serve in USA."
+    },
+    {
+      "Categoria": "Auto",
+      "Voce": "Guidatori autorizzati",
+      "Stato": "Da definire",
+      "Link utile": "",
+      "Note": "Inserire tutti i guidatori al banco se guideranno davvero."
+    },
+    {
+      "Categoria": "Documenti",
+      "Voce": "Patente italiana",
+      "Stato": "Da portare",
+      "Link utile": "https://www.aci.it/i-servizi/guide-utili/guida-allestero/patente-internazionale.html",
+      "Note": "Verificare se fare anche patente internazionale; utile con alcune compagnie/stati."
+    },
+    {
+      "Categoria": "Documenti",
+      "Voce": "Passaporto",
+      "Stato": "Da portare",
+      "Link utile": "",
+      "Note": "Controllare scadenza e dati prenotazioni."
+    },
+    {
+      "Categoria": "Documenti",
+      "Voce": "ESTA",
+      "Stato": "Da confermare",
+      "Link utile": "https://esta.cbp.dhs.gov/",
+      "Note": "Stampare/salvare conferma approvazione."
+    },
+    {
+      "Categoria": "Pagamenti",
+      "Voce": "Carta credito/debito per deposito",
+      "Stato": "Da verificare",
+      "Link utile": "",
+      "Note": "Molti autonoleggi richiedono carta fisica intestata al guidatore principale."
+    },
+    {
+      "Categoria": "Viaggio",
+      "Voce": "Acqua e caldo parchi",
+      "Stato": "Da fare",
+      "Link utile": "",
+      "Note": "A luglio portare tanta acqua; evitare camminate lunghe nelle ore più calde."
+    },
+    {
+      "Categoria": "Viaggio",
+      "Voce": "Guidare con luce",
+      "Stato": "Promemoria",
+      "Link utile": "",
+      "Note": "Consiglio guida: paesaggi belli, meglio guidare con luce quando possibile."
+    }
+  ],
+  "prenotazioni": [
+    {
+      "Cosa prenotare": "Alcatraz Day Tour",
+      "Per quando": "2026-07-05",
+      "Priorità": "Alta se volete farlo",
+      "Costo stimato USD": "47.95 a persona circa",
+      "Link utile": "https://www.cityexperiences.com/san-francisco/city-cruises/alcatraz/tour-options/",
+      "Stato": "Da decidere",
+      "Note": "In estate meglio prenotare prima."
+    },
+    {
+      "Cosa prenotare": "Alloggio San Francisco",
+      "Per quando": "2026-07-04 / 2026-07-05",
+      "Priorità": "Alta",
+      "Costo stimato USD": "",
+      "Link utile": "",
+      "Stato": "Da fare",
+      "Note": "Due notti."
+    },
+    {
+      "Cosa prenotare": "Alloggio Santa Barbara",
+      "Per quando": "2026-07-06",
+      "Priorità": "Alta",
+      "Costo stimato USD": "",
+      "Link utile": "",
+      "Stato": "Da fare",
+      "Note": "Una notte."
+    },
+    {
+      "Cosa prenotare": "Alloggio Los Angeles",
+      "Per quando": "2026-07-07",
+      "Priorità": "Alta",
+      "Costo stimato USD": "",
+      "Link utile": "",
+      "Stato": "Da fare",
+      "Note": "Scegliere zona comoda per partenza verso Las Vegas."
+    },
+    {
+      "Cosa prenotare": "Alloggio Las Vegas",
+      "Per quando": "2026-07-08",
+      "Priorità": "Alta",
+      "Costo stimato USD": "",
+      "Link utile": "",
+      "Stato": "Da fare",
+      "Note": "Valutare parcheggio/resort fee."
+    },
+    {
+      "Cosa prenotare": "Alloggio Grand Canyon/Tusayan",
+      "Per quando": "2026-07-09",
+      "Priorità": "Molto alta",
+      "Costo stimato USD": "",
+      "Link utile": "",
+      "Stato": "Da fare",
+      "Note": "Guida consiglia di dormire più vicino possibile al canyon."
+    },
+    {
+      "Cosa prenotare": "Antelope Canyon tour",
+      "Per quando": "2026-07-10",
+      "Priorità": "Molto alta",
+      "Costo stimato USD": "80-120+ a persona circa",
+      "Link utile": "https://navajonationparks.org/guided-tour-operators/antelope-canyon-tour-operators/",
+      "Stato": "Da fare",
+      "Note": "Prenotare slot e arrivare in anticipo."
+    },
+    {
+      "Cosa prenotare": "Alloggio Page",
+      "Per quando": "2026-07-10",
+      "Priorità": "Alta",
+      "Costo stimato USD": "",
+      "Link utile": "",
+      "Stato": "Da fare",
+      "Note": "Base per Antelope/Horseshoe Bend."
+    },
+    {
+      "Cosa prenotare": "Alloggio Zion/Springdale/Hurricane",
+      "Per quando": "2026-07-11",
+      "Priorità": "Alta",
+      "Costo stimato USD": "",
+      "Link utile": "",
+      "Stato": "Da fare",
+      "Note": "Springdale più comoda, Hurricane/La Verkin più economiche."
+    },
+    {
+      "Cosa prenotare": "Sphere / show Las Vegas",
+      "Per quando": "2026-07-08",
+      "Priorità": "Media",
+      "Costo stimato USD": "variabile",
+      "Link utile": "https://www.thesphere.com/shows",
+      "Stato": "Opzionale",
+      "Note": "Da fuori gratis; dentro solo con biglietto."
+    },
+    {
+      "Cosa prenotare": "Warner Bros Studio Tour",
+      "Per quando": "2026-07-07",
+      "Priorità": "Media",
+      "Costo stimato USD": "70-80 circa",
+      "Link utile": "https://www.wbstudiotour.com/",
+      "Stato": "Opzionale",
+      "Note": "Solo se volete sacrificare parte del giro LA."
+    },
+    {
+      "Cosa prenotare": "Akhob James Turrell",
+      "Per quando": "2026-07-08",
+      "Priorità": "Bassa",
+      "Costo stimato USD": "0 ma booking obbligatorio",
+      "Link utile": "https://www.louisvuitton.com/eng-us/stories/akhob",
+      "Stato": "Opzionale",
+      "Note": "Se vi interessa arte e trovate slot."
+    }
+  ],
+  "link_utili": [
+    {
+      "Categoria": "Planner",
+      "Nome": "Google Maps route completa",
+      "Link": "https://www.google.com/maps/dir/San+Francisco,+CA/Santa+Barbara,+CA/Los+Angeles,+CA/Las+Vegas,+NV/Grand+Canyon+Village,+AZ/Page,+AZ/Zion+National+Park,+UT/Salt+Lake+City,+UT",
+      "Note": "Route base del viaggio."
+    },
+    {
+      "Categoria": "Parcheggi",
+      "Nome": "BestParking",
+      "Link": "https://www.bestparking.com/",
+      "Note": "Utile soprattutto a Los Angeles."
+    },
+    {
+      "Categoria": "San Francisco",
+      "Nome": "Alcatraz City Cruises",
+      "Link": "https://www.cityexperiences.com/san-francisco/city-cruises/alcatraz/tour-options/",
+      "Note": "Biglietti ufficiali Alcatraz."
+    },
+    {
+      "Categoria": "San Francisco",
+      "Nome": "SFMOMA",
+      "Link": "https://www.sfmoma.org/visit/",
+      "Note": "Museo opzionale."
+    },
+    {
+      "Categoria": "San Francisco",
+      "Nome": "De Young Museum",
+      "Link": "https://www.famsf.org/visit/de-young",
+      "Note": "Museo/torre osservazione opzionale."
+    },
+    {
+      "Categoria": "San Francisco",
+      "Nome": "Golden Gate Park",
+      "Link": "https://sfrecpark.org/770/Golden-Gate-Park",
+      "Note": "Parco grande: scegliere solo una zona."
+    },
+    {
+      "Categoria": "Los Angeles",
+      "Nome": "Warner Bros Studio Tour",
+      "Link": "https://www.wbstudiotour.com/",
+      "Note": "Tour consigliato dalla guida se interessati a cinema/backstage."
+    },
+    {
+      "Categoria": "Los Angeles",
+      "Nome": "Griffith Observatory",
+      "Link": "https://griffithobservatory.org/",
+      "Note": "Vista, museo, Hollywood sign da lontano."
+    },
+    {
+      "Categoria": "Los Angeles",
+      "Nome": "Santa Monica Pier",
+      "Link": "https://www.santamonica.com/places-to-go/santa-monica-pier/",
+      "Note": "Santa Monica/Venice cluster."
+    },
+    {
+      "Categoria": "Las Vegas",
+      "Nome": "Sphere",
+      "Link": "https://www.thesphere.com/shows",
+      "Note": "Show e biglietti Sphere."
+    },
+    {
+      "Categoria": "Las Vegas",
+      "Nome": "Fremont Street Experience",
+      "Link": "https://vegasexperience.com/",
+      "Note": "Viva Vision e Fremont."
+    },
+    {
+      "Categoria": "Las Vegas",
+      "Nome": "Bellagio Fountains",
+      "Link": "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html",
+      "Note": "Show gratuito fontane."
+    },
+    {
+      "Categoria": "Las Vegas",
+      "Nome": "The Neon Museum",
+      "Link": "https://www.neonmuseum.org/",
+      "Note": "Opzionale Las Vegas."
+    },
+    {
+      "Categoria": "Parchi",
+      "Nome": "America the Beautiful Pass",
+      "Link": "https://www.nps.gov/planyourvisit/passes.htm",
+      "Note": "Pass parchi USA."
+    },
+    {
+      "Categoria": "Parchi",
+      "Nome": "Grand Canyon South Rim",
+      "Link": "https://www.nps.gov/grca/planyourvisit/south-rim.htm",
+      "Note": "Info ufficiali South Rim."
+    },
+    {
+      "Categoria": "Parchi",
+      "Nome": "Grand Canyon shuttle",
+      "Link": "https://www.nps.gov/grca/planyourvisit/shuttle-buses.htm",
+      "Note": "Info shuttle viewpoint."
+    },
+    {
+      "Categoria": "Page",
+      "Nome": "Horseshoe Bend",
+      "Link": "https://cityofpage.org/official-horseshoe-bend-information",
+      "Note": "Info parcheggio e visita."
+    },
+    {
+      "Categoria": "Page",
+      "Nome": "Navajo Antelope operators",
+      "Link": "https://navajonationparks.org/guided-tour-operators/antelope-canyon-tour-operators/",
+      "Note": "Elenco operatori autorizzati."
+    },
+    {
+      "Categoria": "Page",
+      "Nome": "Lower Antelope Canyon",
+      "Link": "https://www.antelopelowercanyon.com/",
+      "Note": "Una delle opzioni pratiche."
+    },
+    {
+      "Categoria": "Page",
+      "Nome": "Upper Antelope Navajo Tours",
+      "Link": "https://navajotours.com/",
+      "Note": "Una delle opzioni pratiche."
+    },
+    {
+      "Categoria": "Zion",
+      "Nome": "Zion official",
+      "Link": "https://www.nps.gov/zion/index.htm",
+      "Note": "Info parco."
+    },
+    {
+      "Categoria": "Zion",
+      "Nome": "Zion shuttle",
+      "Link": "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm",
+      "Note": "Info shuttle."
+    },
+    {
+      "Categoria": "Zion",
+      "Nome": "Canyon Overlook Trail",
+      "Link": "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm",
+      "Note": "Mini-hike consigliata."
+    },
+    {
+      "Categoria": "Zion",
+      "Nome": "Riverside Walk",
+      "Link": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm",
+      "Note": "Passeggiata facile."
+    },
+    {
+      "Categoria": "Auto",
+      "Nome": "Patente internazionale ACI",
+      "Link": "https://www.aci.it/i-servizi/guide-utili/guida-allestero/patente-internazionale.html",
+      "Note": "Verifica patente internazionale."
+    }
+  ],
+  "note": [
+    {
+      "Tema": "Filtro guida collega",
+      "Nota": "Importati solo elementi compatibili con San Francisco, Santa Barbara, Los Angeles, Las Vegas, Grand Canyon, Page/Antelope, Zion e trasferimento a SLC.",
+      "Link utile": ""
+    },
+    {
+      "Tema": "Esclusioni deliberate",
+      "Nota": "Sono state escluse le deviazioni troppo lunghe o non coerenti con il giro 4–12 luglio.",
+      "Link utile": ""
+    },
+    {
+      "Tema": "San Francisco",
+      "Nota": "Evitare Tenderloin/dietro Union Square. Alcatraz merita se prenotata. Cable car opzionale.",
+      "Link utile": ""
+    },
+    {
+      "Tema": "Los Angeles",
+      "Nota": "Santa Monica/Venice meglio prima del buio; parcheggi anche 20$ al giorno. Downtown solo se avete energie e senza passare da Skid Row.",
+      "Link utile": "https://www.bestparking.com/"
+    },
+    {
+      "Tema": "Grand Canyon",
+      "Nota": "Non puntare tutto su un solo viewpoint: se c’è nebbia/visibilità variabile, provare più punti. Dormire vicino al canyon.",
+      "Link utile": "https://www.nps.gov/grca/planyourvisit/south-rim.htm"
+    },
+    {
+      "Tema": "Page / Antelope",
+      "Nota": "Horseshoe Bend breve ma must. Antelope va prenotato; arrivare prima dell’orario.",
+      "Link utile": "https://navajonationparks.org/guided-tour-operators/antelope-canyon-tour-operators/"
+    },
+    {
+      "Tema": "Zion",
+      "Nota": "Canyon Overlook è la mini-hike prioritaria. Per Zion Canyon usare shuttle; Riverside Walk è la passeggiata facile consigliata.",
+      "Link utile": "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm"
+    },
+    {
+      "Tema": "Las Vegas",
+      "Nota": "Non provare a vedere tutto: scegliere Strip + Fremont + Sphere da fuori/Bellagio/Venetian. Dopo un po’ molti hotel sembrano simili.",
+      "Link utile": ""
+    },
+    {
+      "Tema": "Operatività",
+      "Nota": "Il foglio è pensato per boomer: aggiungere righe semplici senza ID, senza orari, senza colonne tecniche.",
+      "Link utile": ""
+    }
   ]
 }
