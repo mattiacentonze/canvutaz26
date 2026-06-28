@@ -7,7 +7,7 @@
  * Le colonne restano semplici. Le immagini sono solo URL di sfondo usati dal sito.
  */
 
-const SHEET_ID = '1cnic2mdTvJ2UD8Cpy3hjOGG-mAiRK2w0Hg-Ox4Ol7sE';
+const SHEET_ID = '1iVNIX-nnxr2rfs2V-vp7xQop9YIBeHqP4s21EpNOI3k';
 const SHEET_HEADERS = {
   giorni: ['Data','Titolo giornata','Partenza','Arrivo','Guida stimata','Priorità del giorno','Da vedere','Google Maps','Immagini sfondo','Fonte immagini','Note'],
   cose_da_fare: ['Data','Luogo','Cosa fare','Categoria','Priorità','Costo stimato USD','Link utile','Immagine sfondo','Fonte immagine','Note'],
