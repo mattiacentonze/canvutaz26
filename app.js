@@ -1,5 +1,5 @@
 const CONFIG = window.USA26_CONFIG || { APPS_SCRIPT_URL: '', GOOGLE_SHEET_URL: '' };
-const STORAGE_KEY = 'usa26_v34_cache';
+const STORAGE_KEY = 'usa26_v35_cache';
 let state = null;
 let backendConnected = false;
 let backendError = '';
@@ -71,13 +71,13 @@ function showTab(name){ $$('.tab').forEach(b => b.classList.toggle('is-active', 
 async function loadData(){
   const cached = readCache();
   state = cached?.data ? cached.data : createEmptyState();
-  if(CONFIG.APPS_SCRIPT_URL){
-    try{ const remote = await jsonp(CONFIG.APPS_SCRIPT_URL, { action:'get' }, 9000); if(remote && remote.ok !== false){ const remoteData = remote.data || remote; applyRemoteData(remoteData, cached); backendConnected = true; backendSource = 'Apps Script'; backendError = ''; } else if(remote && remote.ok === false){ backendError = remote.error || remote.message || 'Errore Apps Script'; } }
-    catch(e){ backendError = e?.message || 'Errore caricamento backend'; console.warn('Backend non disponibile, uso cache locale o stato vuoto', e); }
-  }
-  if(!backendConnected){
+  if(CONFIG.GOOGLE_SHEET_URL){
     try{ const sheetData = await loadGoogleSheetData(); applyRemoteData(sheetData, cached); backendConnected = true; backendSource = 'Google Sheet pubblico'; backendError = ''; }
     catch(e){ backendError = backendError ? `${backendError}; Google Sheet: ${e?.message || e}` : `Google Sheet: ${e?.message || e}`; console.warn('Google Sheet pubblico non disponibile', e); }
+  }
+  if(!backendConnected && CONFIG.APPS_SCRIPT_URL){
+    try{ const remote = await jsonp(CONFIG.APPS_SCRIPT_URL, { action:'get' }, 9000); if(remote && remote.ok !== false){ const remoteData = remote.data || remote; applyRemoteData(remoteData, cached); backendConnected = true; backendSource = 'Apps Script'; backendError = ''; } else if(remote && remote.ok === false){ backendError = backendError ? `${backendError}; Apps Script: ${remote.error || remote.message || 'Errore Apps Script'}` : remote.error || remote.message || 'Errore Apps Script'; } }
+    catch(e){ backendError = backendError ? `${backendError}; Apps Script: ${e?.message || e}` : e?.message || 'Errore caricamento backend'; console.warn('Backend Apps Script non disponibile', e); }
   }
   if(!backendConnected && cached?.data){ state = cached.data; }
 }
