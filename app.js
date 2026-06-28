@@ -1,7 +1,24 @@
 const CONFIG = window.USA26_CONFIG || { APPS_SCRIPT_URL: '', GOOGLE_SHEET_URL: '' };
-const STORAGE_KEY = 'usa26_v32_cache';
+const STORAGE_KEY = 'usa26_v33_cache';
 let state = null;
 let backendConnected = false;
+const EMPTY_STATE = {
+  meta: {
+    Titolo: 'USA26 Roadtrip Planner',
+    Periodo: '4–12 luglio 2026',
+    Persone: '3',
+    Sintesi: '',
+    'Route Google Maps': ''
+  },
+  giorni: [],
+  cose_da_fare: [],
+  alloggi: [],
+  costi: [],
+  auto_documenti: [],
+  prenotazioni: [],
+  link_utili: [],
+  note: []
+};
 
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => Array.from(el.querySelectorAll(s));
@@ -49,21 +66,25 @@ async function init(){
 function wireTabs(){ $$('.tab').forEach(b => b.addEventListener('click', () => showTab(b.dataset.tab))); }
 function showTab(name){ $$('.tab').forEach(b => b.classList.toggle('is-active', b.dataset.tab === name)); $$('.tab-panel').forEach(p => p.classList.toggle('is-visible', p.id === name)); if(name==='edit') location.hash='edit'; }
 async function loadData(){
-  state = await fetch('sample-data.json?v=20260628-v32').then(r=>r.json());
-  const cached = readCache(); if(cached) state = merge(state, cached);
+  const cached = readCache();
+  state = cached?.data ? cached.data : createEmptyState();
   if(CONFIG.APPS_SCRIPT_URL){
-    try{ const remote = await jsonp(CONFIG.APPS_SCRIPT_URL, { action:'get' }, 9000); if(remote && remote.ok !== false){ state = merge(state, remote.data || remote); backendConnected = true; writeCache(state); } }
-    catch(e){ console.warn('Backend non disponibile, uso dati locali/sample', e); }
+    try{ const remote = await jsonp(CONFIG.APPS_SCRIPT_URL, { action:'get' }, 9000); if(remote && remote.ok !== false){ const remoteData = remote.data || remote; const currentSignature = cached?.signature || ''; const remoteSignature = dataSignature(remoteData); if(currentSignature && currentSignature !== remoteSignature){ clearCache(); } state = remoteData; backendConnected = true; writeCache(state); } }
+    catch(e){ console.warn('Backend non disponibile, uso cache locale o stato vuoto', e); }
   }
+  if(!backendConnected && cached?.data){ state = cached.data; }
 }
-function readCache(){ try{ const raw = localStorage.getItem(STORAGE_KEY); return raw ? JSON.parse(raw) : null; } catch(e){ return null; } }
-function writeCache(data){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch(e){} }
+function createEmptyState(){ return structuredClone(EMPTY_STATE); }
+function readCache(){ try{ const raw = localStorage.getItem(STORAGE_KEY); if(!raw) return null; const parsed = JSON.parse(raw); if(parsed && typeof parsed === 'object' && 'data' in parsed) return parsed; return { signature: dataSignature(parsed), data: parsed }; } catch(e){ return null; } }
+function clearCache(){ try{ localStorage.removeItem(STORAGE_KEY); } catch(e){} }
+function writeCache(data){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify({ signature: dataSignature(data), data })); } catch(e){} }
+function dataSignature(data){ try{ return JSON.stringify(data || null); } catch(e){ return String(Date.now()); } }
 function merge(base, overlay){ const out = structuredClone(base); if(overlay.meta) out.meta = {...out.meta, ...overlay.meta}; ['giorni','cose_da_fare','alloggi','costi','auto_documenti','prenotazioni','link_utili','note'].forEach(k => { if(Array.isArray(overlay[k]) && overlay[k].length) out[k] = overlay[k]; }); return out; }
 function jsonp(url, params={}, timeout=8000){ return new Promise((resolve,reject)=>{ const cb = `usa26_cb_${Date.now()}_${Math.random().toString(36).slice(2)}`; const u = new URL(url); Object.entries(params).forEach(([k,v])=>u.searchParams.set(k,v)); u.searchParams.set('callback', cb); const s = document.createElement('script'); const t = setTimeout(()=>{ cleanup(); reject(new Error('Timeout Apps Script')); }, timeout); function cleanup(){ clearTimeout(t); delete window[cb]; s.remove(); } window[cb] = (data)=>{ cleanup(); resolve(data); }; s.onerror = ()=>{ cleanup(); reject(new Error('Errore caricamento Apps Script')); }; s.src = u.toString(); document.body.appendChild(s); }); }
 function setupLinks(){ const route = state?.meta?.['Route Google Maps'] || '#'; $('#mapsFullRoute').href = route; const sheet = CONFIG.GOOGLE_SHEET_URL || state?.meta?.['Google Sheet'] || ''; ['editSheetHero','editSheetLink'].forEach(id=>{ const a=$('#'+id); if(!a) return; a.href = sheet || '#edit'; if(!sheet){a.removeAttribute('target'); a.removeAttribute('rel');} }); }
 async function copySheetLink(){ const status=$('#sheetLinkStatus'); const sheet=CONFIG.GOOGLE_SHEET_URL || state?.meta?.['Google Sheet'] || ''; if(!sheet){ status.textContent='Inserisci prima GOOGLE_SHEET_URL in config.js.'; return; } try{ await navigator.clipboard.writeText(sheet); status.textContent='Link Google Sheet copiato.'; }catch(e){ status.textContent='Copia non riuscita: copia manualmente da config.js.'; } }
 function populateDayFilter(){ const sel=$('#dayFilter'); if(!sel) return; sel.innerHTML = '<option value="all">Tutti i giorni</option>' + (state.giorni||[]).map(d=>`<option value="${safe(d.Data)}">${safe(fmtDate(d.Data))} · ${safe(d['Arrivo'])}</option>`).join(''); sel.addEventListener('change', renderThings); }
-function renderAll(){ renderStats(); renderOverview(); renderDays(); renderThings(); renderCosts(); renderBookings(); renderLodging(); renderDocs(); renderLinks(); renderNotes(); $('#backendStatus').textContent = backendConnected ? 'Dati caricati dal Google Sheet / Apps Script.' : 'Uso dati locali/sample. Configura Apps Script per leggere dal Google Sheet.'; }
+function renderAll(){ renderStats(); renderOverview(); renderDays(); renderThings(); renderCosts(); renderBookings(); renderLodging(); renderDocs(); renderLinks(); renderNotes(); $('#backendStatus').textContent = backendConnected ? 'Dati caricati dal Google Sheet / Apps Script.' : 'Uso cache locale o stato vuoto. Configura Apps Script per leggere dal Google Sheet.'; }
 function renderStats(){ $('#statTravelers').textContent = state.meta?.Persone || '3'; $('#statDays').textContent = (state.giorni||[]).length; const total = (state.giorni||[]).map(d=>d['Guida stimata']).filter(Boolean).length; $('#statDrive').textContent = `${total} tappe`; }
 function renderOverview(){ $('#overviewHighlights').innerHTML = ['4-6 SF','6 Santa Barbara','7 LA','8 Las Vegas','9 Grand Canyon','10 Page','11 Zion','12 SLC'].map(x=>`<span class="pill">${x}</span>`).join(''); $('#timelineMini').innerHTML = (state.giorni||[]).map(d=>`<article class="timeline-item"><strong>${safe(fmtDate(d.Data))}</strong><span>${safe(d['Titolo giornata'])}</span><span>${safe(d.Partenza)} → ${safe(d.Arrivo)}</span></article>`).join(''); }
 function renderDays(){ $('#daysList').innerHTML = (state.giorni||[]).map(d=>{ const media = mediaBlock(imageList(d, 'Immagini sfondo')); return `<article class="day-card day-card--with-media">${media}<div class="day-card__head"><p class="eyebrow">${safe(fmtDate(d.Data))}</p><h2>${safe(d['Titolo giornata'])}</h2></div><div class="day-card__body"><div class="meta-grid"><div class="meta-box"><span>Partenza</span><strong>${safe(d.Partenza)}</strong></div><div class="meta-box"><span>Arrivo</span><strong>${safe(d.Arrivo)}</strong></div><div class="meta-box"><span>Guida stimata</span><strong>${safe(d['Guida stimata'])}</strong></div><div class="meta-box"><span>Priorità</span><strong>${safe(d['Priorità del giorno'])}</strong></div></div><p><strong>Da vedere:</strong> ${safe(d['Da vedere'])}</p><p class="muted">${safe(d.Note)}</p><p>${link(d['Google Maps'],'Apri Google Maps')}</p></div></article>`; }).join(''); }

@@ -55,7 +55,7 @@ Poi controlla: `Settings → Pages → Branch main / root`.
 
 ## Cache
 
-La v3.2 usa nuovi cache-buster in `index.html` e una nuova chiave `localStorage` (`usa26_v31_cache`). Dopo il push, fare `Ctrl+F5` sul sito.
+La v3.2 usa nuovi cache-buster in `index.html` e una nuova chiave `localStorage` (`usa26_v33_cache`). Se hai ancora dati vecchi, svuota la cache del sito o fai `Ctrl+F5` dopo il deploy.
 
 ## Sicurezza
 
